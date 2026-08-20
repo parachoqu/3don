@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="Cache-Control" content="public, max-age=0, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>3D On Impressões · Impressão 3D e Catálogo de Produtos em Teófilo Otoni/MG</title>
   <meta name="description" content="Impressão 3D personalizada e catálogo de produtos em Teófilo Otoni/MG. Troféus, brindes, peças sob encomenda e projetos corporativos. Envio para todo o Brasil.">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -12,8 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=e7b393951285">
+  <script src="script.js?v=e7d2e192c4bf" defer></script>
 </head>
 
 <body id="topo" data-view="home">
@@ -41,250 +44,304 @@
   <!-- HOME VIEW MAIN -->
   <main class="home-main" id="viewHome">
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Soluções em impressão 3D</p>
+        <h1 class="print-heading">
+          <span class="row" style="--i:0"><span>Dê forma</span></span>
+          <span class="row" style="--i:1"><span>às suas</span></span>
+          <span class="row" style="--i:2"><span class="accent">ideias.</span></span>
+        </h1>
+        <p class="hero-sub">Peças personalizadas, funcionais e projetos sob medida produzidos em impressão 3D.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary ripple-host"
+            href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20com%20a%203D%20On."
+            target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-ghost ripple-host" href="#catalogo-completo">Ver catálogo</a>
+        </div>
+      </div>
 
+      <!-- Hero Visual Composition: Slider Horizontal de Projetos Entregues -->
+      <div class="hero-visual reveal" id="heroVisualCarousel" aria-label="Slider de projetos entregues">
+        <div class="hero-carousel-frame">
+          <div class="hero-carousel-track" id="heroCarouselTrack">
+            <div class="hero-carousel-slide active" data-title="Impressão Realista — DD Treinamentos">
+              <img src="assets/projetos entregues/Impressão_Realista_Wendel_DD-Treinamentos.png" alt="Impressão Realista — DD Treinamentos" class="hero-carousel-img" loading="eager">
+            </div>
+            <div class="hero-carousel-slide" data-title="Porta Figurinhas">
+              <img src="assets/projetos entregues/Porta_Figurinhas.png" alt="Porta Figurinhas" class="hero-carousel-img" loading="lazy">
+            </div>
+            <div class="hero-carousel-slide" data-title="Suporte de Controles">
+              <img src="assets/projetos entregues/Suporte_Controles.png" alt="Suporte de Controles" class="hero-carousel-img" loading="lazy">
+            </div>
+            <div class="hero-carousel-slide" data-title="Troféu Mascote — CrescerFarma">
+              <img src="assets/projetos entregues/Troféu_Mascote_CrescerFarma.png" alt="Troféu Mascote — CrescerFarma" class="hero-carousel-img" loading="lazy">
+            </div>
+          </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">Soluções em impressão 3D</p>
-      <h1 class="print-heading">
-        <span class="row" style="--i:0"><span>Dê forma</span></span>
-        <span class="row" style="--i:1"><span>às suas</span></span>
-        <span class="row" style="--i:2"><span class="accent">ideias.</span></span>
+          <!-- Top Badge: Categoria -->
+          <div class="hero-badge-top">
+            <span class="dot"></span>
+            <span class="badge-tag">Projetos Entregues</span>
+          </div>
+        </div>
 
-      </h1>
-      <p class="hero-sub">Peças, troféus e brindes personalizados, modelados do zero e impressos com precisão. Da ideia à
-        entrega, em qualquer lugar do Brasil.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary ripple-host"
+        <!-- Bottom Badge: Centralizado sob a borda inferior -->
+        <div class="hero-visual-badge">
+          <span class="badge-num" id="heroCarouselBadgeNum">01</span>
+          <span class="badge-title" id="heroCarouselBadgeTitle">Impressão Realista — DD Treinamentos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: O QUE A 3D ON FAZ (EDITORIAL LIST) -->
+    <section class="editorial-section reveal" id="o-que-fazemos">
+      <div class="section-head">
+        <p class="eyebrow">Soluções</p>
+        <h2>O que a 3D On faz</h2>
+        <p class="section-sub">Da ideia à peça final, criamos soluções para diferentes necessidades.</p>
+      </div>
+
+      <div class="editorial-list">
+        <a href="#catalogo-completo" class="editorial-item ripple-host">
+          <span class="editorial-num">01</span>
+          <div class="editorial-content">
+            <h3>Personalizados</h3>
+            <p>Peças feitas sob medida para representar sua ideia ou marca.</p>
+          </div>
+          <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a href="#catalogo-completo" class="editorial-item ripple-host">
+          <span class="editorial-num">02</span>
+          <div class="editorial-content">
+            <h3>Presentes</h3>
+            <p>Produtos exclusivos pensados para momentos especiais.</p>
+          </div>
+          <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a href="#catalogo-completo" class="editorial-item ripple-host">
+          <span class="editorial-num">03</span>
+          <div class="editorial-content">
+            <h3>Funcionais</h3>
+            <p>Objetos práticos desenvolvidos para facilitar o uso diário.</p>
+          </div>
+          <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a href="#catalogo-completo" class="editorial-item ripple-host">
+          <span class="editorial-num">04</span>
+          <div class="editorial-content">
+            <h3>Projetos</h3>
+            <p>Modelagem + impressão 3D completa do conceito à entrega.</p>
+          </div>
+          <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 04: PRODUTOS EM DESTAQUE -->
+    <section class="highlights-section reveal" id="destaques">
+      <div class="section-head">
+        <p class="eyebrow">Vitrine</p>
+        <h2>Destaques</h2>
+        <p class="section-sub">Conheça algumas das nossas soluções mais procuradas.</p>
+      </div>
+
+      <div class="highlights-grid" id="highlightsCarousel" aria-label="Produtos em destaque">
+
+        <article class="highlight-card ripple-host">
+          <figure class="highlight-media">
+            <img src="assets/catalogo/gadgets-e-dispositivos/suporte-dobravel-smartphone-print-in-place.webp" alt="Suporte Dobrável para Smartphone Print-in-Place" width="480" height="360" loading="lazy">
+            <span class="highlight-tag">Gadget</span>
+          </figure>
+          <div class="highlight-body">
+            <h3>Suporte Dobrável para Smartphone Print-in-Place</h3>
+            <p>Dobrável, ultraleve e pronto para acompanhar mesa, bancada ou mochila.</p>
+            <a class="highlight-cta" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20Dobr%C3%A1vel%20para%20Smartphone%20Print-in-Place." target="_blank" rel="noopener">
+              Orçar &rarr;
+            </a>
+          </div>
+        </article>
+
+        <article class="highlight-card ripple-host">
+          <figure class="highlight-media">
+            <img src="assets/catalogo/gadgets-e-dispositivos/suporte-ergonomico-headset.webp" alt="Suporte Ergonômico de Mesa para Headsets" width="480" height="360" loading="lazy">
+            <span class="highlight-tag">Setup</span>
+          </figure>
+          <div class="highlight-body">
+            <h3>Suporte Ergonômico de Mesa para Headsets</h3>
+            <p>Apoio estável e moderno para headsets gamer ou fones de trabalho.</p>
+            <a class="highlight-cta" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20Ergon%C3%B4mico%20de%20Mesa%20para%20Headsets." target="_blank" rel="noopener">
+              Orçar &rarr;
+            </a>
+          </div>
+        </article>
+
+        <article class="highlight-card ripple-host">
+          <figure class="highlight-media">
+            <img src="assets/catalogo/utensilios-domesticos/prendedor-embalagens-veda-sacos-kit.webp" alt="Prendedor de Embalagens Print-in-Place (Kit com 5)" width="480" height="360" loading="lazy">
+            <span class="highlight-tag">Utilidade</span>
+          </figure>
+          <div class="highlight-body">
+            <h3>Prendedor de Embalagens Print-in-Place (Kit com 5)</h3>
+            <p>Kit funcional para vedar mantimentos, cafés e petiscos com praticidade.</p>
+            <a class="highlight-cta" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Prendedor%20de%20Embalagens%20Print-in-Place%20(Kit%20com%205)." target="_blank" rel="noopener">
+              Orçar &rarr;
+            </a>
+          </div>
+        </article>
+
+        <article class="highlight-card ripple-host">
+          <figure class="highlight-media">
+            <img src="assets/catalogo/articulados-e-fidgets/dragao-articulado-flexivel.webp" alt="Dragão Articulado Flexível (Flexi Dragon)" width="480" height="360" loading="lazy">
+            <span class="highlight-tag">Articulado</span>
+          </figure>
+          <div class="highlight-body">
+            <h3>Dragão Articulado Flexível (Flexi Dragon)</h3>
+            <p>Peça print-in-place com movimento fluido, tátil e visual marcante.</p>
+            <a class="highlight-cta" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Drag%C3%A3o%20Articulado%20Flex%C3%ADvel%20(Flexi%20Dragon)." target="_blank" rel="noopener">
+              Orçar &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="highlights-dots" id="highlightsDots"></div>
+
+      <div class="highlights-more">
+        <a href="#catalogo-completo" class="btn btn-ghost ripple-host">
+          Ver todos os 10 produtos &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 05: SOLUÇÕES PARA O DIA A DIA -->
+    <section class="catalog-collection-section reveal" id="solucoes-do-dia-a-dia">
+      <div class="catalog-collection-content">
+        <p class="eyebrow">Catálogo permanente</p>
+        <h2>SOLUÇÕES PRONTAS PARA A ROTINA.</h2>
+        <p>Acessórios funcionais, itens de organização, fidgets e chaveiros feitos em impressão 3D para diferentes usos e estilos.</p>
+        <a href="#catalogo-completo" class="btn btn-primary ripple-host">
+          Ver Catálogo
+        </a>
+      </div>
+      <div class="catalog-collection-media">
+        <div class="catalog-collection-media-frame">
+          <img src="assets/catalogo/articulados-e-fidgets/dragao-articulado-flexivel.webp" alt="Dragão articulado flexível impresso em 3D" width="480" height="360" loading="lazy">
+          <span class="glow-accent" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: COMO FUNCIONA (TIMELINE VERTICAL) -->
+    <section class="timeline-section reveal" id="como-funciona">
+      <div class="section-head">
+        <p class="eyebrow">Etapas</p>
+        <h2>Como Funciona</h2>
+        <p class="section-sub">Do primeiro contato até a entrega na sua porta.</p>
+      </div>
+
+      <div class="timeline-stepper">
+        <div class="timeline-step">
+          <span class="timeline-num">01</span>
+          <div class="timeline-text">
+            <h3>VOCÊ MANDA A IDEIA</h3>
+            <p>Referência, desenho ou descrição — a gente entende o que você imagina.</p>
+          </div>
+        </div>
+
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-step">
+          <span class="timeline-num">02</span>
+          <div class="timeline-text">
+            <h3>A GENTE MODELA</h3>
+            <p>Transformamos a ideia em um modelo 3D com atenção a cada detalhe e proporção.</p>
+          </div>
+        </div>
+
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-step">
+          <span class="timeline-num">03</span>
+          <div class="timeline-text">
+            <h3>IMPRIMIMOS E ENVIAMOS</h3>
+            <p>Impressão de alto padrão, acabamento e envio para qualquer lugar do Brasil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: FAQ -->
+    <section class="faq-editorial-section reveal" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas</p>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-editorial-list">
+
+        <div class="faq-editorial-item">
+          <button class="faq-editorial-question" type="button" aria-expanded="false" aria-controls="faq-ans-1">
+            <span>Preciso ter o arquivo 3D pronto?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-editorial-answer" id="faq-ans-1">
+            <p>Não! Nós modelamos do zero a partir da sua ideia, foto de referência ou rascunho. Desenvolvemos o projeto completo até a aprovação final.</p>
+          </div>
+        </div>
+
+        <div class="faq-editorial-item">
+          <button class="faq-editorial-question" type="button" aria-expanded="false" aria-controls="faq-ans-2">
+            <span>Qual o prazo de produção e envio?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-editorial-answer" id="faq-ans-2">
+            <p>O prazo varia de acordo com a complexidade e quantidade de peças, mas a maioria dos pedidos fica pronta em 2 a 5 dias úteis e enviamos para todo o Brasil.</p>
+          </div>
+        </div>
+
+        <div class="faq-editorial-item">
+          <button class="faq-editorial-question" type="button" aria-expanded="false" aria-controls="faq-ans-3">
+            <span>Como faço para solicitar um orçamento?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-editorial-answer" id="faq-ans-3">
+            <p>Basta clicar no botão do WhatsApp, nos mandar as informações ou ideias do que você precisa e enviaremos uma cotação sem compromisso.</p>
+          </div>
+        </div>
+
+        <div class="faq-editorial-item">
+          <button class="faq-editorial-question" type="button" aria-expanded="false" aria-controls="faq-ans-4">
+            <span>Os itens podem ser personalizados?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-editorial-answer" id="faq-ans-4">
+            <p>Sim! Podemos adicionar nomes, logotipos, alterar dimensões e escolher cores e acabamentos específicos para o seu projeto.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 08: CTA FINAL -->
+    <section class="final-cta-section reveal" id="orcamento">
+      <div class="final-cta-inner">
+        <h2>TIRE SEU PROJETO DO PAPEL.</h2>
+        <p>Conta pra gente o que você precisa. A gente transforma a ideia em uma peça real.</p>
+        <a class="btn btn-primary btn-large ripple-host"
           href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20com%20a%203D%20On."
           target="_blank" rel="noopener">
           Falar no WhatsApp
         </a>
-        <a class="btn btn-ghost ripple-host" href="#catalogo-completo">Ver catálogo</a>
       </div>
-    </div>
-    <div class="hero-badges reveal" aria-label="Diferenciais da 3D On">
-      <div><b>100%</b>Personalizado</div>
-      <div><b>Brasil</b>Envio para todo o país</div>
-      <div><b>Sob medida</b>Do modelo à entrega</div>
-    </div>
-  </section>
-
-  <!-- Catalog Section -->
-  <div class="section-head reveal" id="catalogo">
-    <p class="eyebrow">Catálogo</p>
-    <h2>O que a gente imprime</h2>
-    <p>Cada categoria é modelada do zero, pensada pra representar sua marca, sua conquista ou sua ideia.</p>
-  </div>
-
-  <div class="swipe-hint">
-    <img src="assets/icons/swipe-arrow-right.svg" alt="" aria-hidden="true">
-    Deslize para ver mais
-  </div>
-
-  <div class="catalog" id="catalogScroll">
-    <div class="cat-card reveal reveal-delay-1 ripple-host" data-n="01">
-      <div class="icon-box">
-        <img class="icon" src="assets/icons/category-trophy.svg" alt="" aria-hidden="true">
-      </div>
-      <h3>Troféus personalizados</h3>
-      <div class="card-details" id="home-card-details-1">
-        <div class="card-details-inner">
-          <p>Premiações e reconhecimentos modelados com a identidade de quem recebe.</p>
-        </div>
-      </div>
-      <button class="card-details-toggle" type="button" aria-expanded="false" aria-controls="home-card-details-1">
-        <span>Ver detalhes</span>
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-    </div>
-
-    <div class="cat-card reveal reveal-delay-2 ripple-host" data-n="02">
-      <div class="icon-box">
-        <img class="icon" src="assets/icons/category-keychain.svg" alt="" aria-hidden="true">
-      </div>
-      <h3>Brindes &amp; chaveiros</h3>
-      <div class="card-details" id="home-card-details-2">
-        <div class="card-details-inner">
-          <p>Peças pequenas em série para campanhas, eventos e ações de marca.</p>
-        </div>
-      </div>
-      <button class="card-details-toggle" type="button" aria-expanded="false" aria-controls="home-card-details-2">
-        <span>Ver detalhes</span>
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-    </div>
-
-    <div class="cat-card reveal reveal-delay-1 ripple-host" data-n="03">
-      <div class="icon-box">
-        <img class="icon" src="assets/icons/category-cube.svg" alt="" aria-hidden="true">
-      </div>
-      <h3>Peças sob encomenda</h3>
-      <div class="card-details" id="home-card-details-3">
-        <div class="card-details-inner">
-          <p>Reposição, protótipo ou peça técnica — modelagem sob medida pro seu projeto.</p>
-        </div>
-      </div>
-      <button class="card-details-toggle" type="button" aria-expanded="false" aria-controls="home-card-details-3">
-        <span>Ver detalhes</span>
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-    </div>
-
-    <div class="cat-card reveal reveal-delay-2 ripple-host" data-n="04">
-      <div class="icon-box">
-        <img class="icon" src="assets/icons/category-gift.svg" alt="" aria-hidden="true">
-      </div>
-      <h3>Presentes exclusivos</h3>
-      <div class="card-details" id="home-card-details-4">
-        <div class="card-details-inner">
-          <p>Objetos únicos, feitos pra marcar uma data ou uma pessoa específica.</p>
-        </div>
-      </div>
-      <button class="card-details-toggle" type="button" aria-expanded="false" aria-controls="home-card-details-4">
-        <span>Ver detalhes</span>
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-    </div>
-
-    <div class="cat-card wide reveal reveal-delay-3 ripple-host" data-n="05">
-      <div class="icon-box">
-        <img class="icon" src="assets/icons/category-corporate.svg" alt="" aria-hidden="true">
-      </div>
-      <div>
-        <h3>Projeto corporativo</h3>
-        <div class="card-details" id="home-card-details-5">
-          <div class="card-details-inner">
-            <p>Sua empresa tem uma ideia maior? A gente desenvolve a peça do conceito à impressão final.</p>
-          </div>
-        </div>
-        <button class="card-details-toggle" type="button" aria-expanded="false" aria-controls="home-card-details-5">
-          <span>Ver detalhes</span>
-          <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scroll dots for catalog swipe -->
-  <div class="scroll-dots" id="scrollDots" aria-hidden="true">
-    <span class="dot-item active"></span>
-    <span class="dot-item"></span>
-    <span class="dot-item"></span>
-    <span class="dot-item"></span>
-    <span class="dot-item"></span>
-  </div>
-
-  <div class="catalog-cta reveal">
-    <a href="#catalogo-completo" class="btn btn-ghost ripple-host">
-      Explorar Catálogo Completo &rarr;
-    </a>
-  </div>
-
-  <div class="support-grid">
-  <!-- Material Selector Widget -->
-  <div class="material-selector reveal">
-    <div class="material-header">
-      Materiais e Acabamentos <span>Deslize ›</span>
-    </div>
-    <div class="material-pills">
-      <div class="mat-pill active" role="button" tabindex="0" aria-pressed="true" data-desc="PLA Preto Fosco - Textura aveludada de alta resolução">
-        <span class="mat-dot" style="background:#1a1a1e;"></span> PLA Preto Fosco
-      </div>
-      <div class="mat-pill" role="button" tabindex="0" aria-pressed="false" data-desc="PLA Laranja Neon - Brilho vibrante e destaque visual">
-        <span class="mat-dot" style="background:#ff6a00;"></span> Laranja Neon
-      </div>
-      <div class="mat-pill" role="button" tabindex="0" aria-pressed="false" data-desc="PETG Translúcido - Resistência técnica e semi-transparência">
-        <span class="mat-dot" style="background:#4da6ff;"></span> PETG Cristal
-      </div>
-      <div class="mat-pill" role="button" tabindex="0" aria-pressed="false" data-desc="Seda Dourada - Acabamento premium metalizado e brilhante">
-        <span class="mat-dot" style="background:#ffd700;"></span> Seda Dourada
-      </div>
-    </div>
-    <p id="matDesc">
-      PLA Preto Fosco - Textura aveludada de alta resolução
-    </p>
-  </div>
-
-  <!-- Process Section -->
-  <div class="process reveal">
-    <div class="process-row">
-      <span class="layer">01</span>
-      <div>
-        <p>Você manda a ideia</p>
-        <span>Referência, desenho ou só a descrição — a gente entende o que você imagina.</span>
-      </div>
-    </div>
-    <div class="process-row">
-      <span class="layer">02</span>
-      <div>
-        <p>A gente modela</p>
-        <span>Criação do modelo 3D com atenção em cada detalhe e proporção.</span>
-      </div>
-    </div>
-    <div class="process-row">
-      <span class="layer">03</span>
-      <div>
-        <p>Imprimimos e enviamos</p>
-        <span>Impressão de alto padrão, acabamento e envio pra qualquer lugar do Brasil.</span>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="closing-grid">
-  <!-- FAQ Section -->
-  <div class="faq-section reveal">
-    <div class="section-head faq-head">
-      <p class="eyebrow">Dúvidas</p>
-      <h2>Perguntas Frequentes</h2>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
-        Preciso ter o arquivo 3D pronto?
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-      <div class="faq-answer" id="faq-answer-1">
-        Não! Nós modelamos do zero a partir da sua ideia, foto de referência ou rascunho. Desenvolvemos o projeto completo até a aprovação final.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
-        Qual o prazo de produção e envio?
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-      <div class="faq-answer" id="faq-answer-2">
-        O prazo varia de acordo com a complexidade e quantidade de peças, mas a maioria dos pedidos fica pronta em 2 a 5 dias úteis e enviamos para todo o Brasil.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
-        Como faço para solicitar um orçamento?
-        <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-      </button>
-      <div class="faq-answer" id="faq-answer-3">
-        Basta clicar no botão do WhatsApp, nos mandar as informações ou ideias do que você precisa e enviaremos uma cotação sem compromisso.
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA Section -->
-  <div class="cta reveal">
-    <h2>Tire seu projeto do papel</h2>
-    <p>Conta pra gente o que você precisa e recebe um orçamento sob medida, sem compromisso.</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary ripple-host"
-        href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20com%20a%203D%20On."
-        target="_blank" rel="noopener">
-        Falar no WhatsApp
-      </a>
-    </div>
-  </div>
-  </div>
+    </section>
 
   </main>
 
@@ -293,33 +350,30 @@
     <!-- Catalog Hero Section -->
     <div class="cat-hero">
       <p class="eyebrow">Catálogo 3D On</p>
-      <h1>Ideias que ganham forma.</h1>
-      <p>Uma seleção de produtos criativos, funcionais e personalizáveis para casa, trabalho, lazer e presentes.</p>
+      <h1>Dez peças prontas. De R$ 7 a R$ 25.</h1>
+      <p>Impressas sob demanda em Teófilo Otoni e enviadas para todo o Brasil. Escolha uma peça e feche no WhatsApp.</p>
     </div>
 
     <div class="catalog-controls">
     <!-- Search Input Bar -->
     <div class="search-box">
       <img class="search-icon" src="assets/icons/search.svg" alt="" aria-hidden="true">
-      <input type="search" id="searchInput" class="search-input" placeholder="Busque por produto, categoria ou uso..." aria-label="Buscar por produto, categoria ou uso" autocomplete="off">
+      <input type="search" id="searchInput" class="search-input" placeholder="Buscar por peça, material ou uso" aria-label="Buscar por peça, categoria, material ou uso" autocomplete="off">
     </div>
 
     <!-- Filter Pills -->
     <div class="filter-pills" id="filterPills" role="group" aria-label="Filtrar produtos por categoria">
       <button class="filter-pill active" type="button" aria-pressed="true" data-cat="all">Todos</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="escritorio">Escritório &amp; Home Office</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="oficina">Oficina &amp; Ferramentas</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="churrasco">Churrasco</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="carro">Carro</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="cafe">Café &amp; Bebidas</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="geek">Geek &amp; Tecnologia</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="personalizados">Personalizados</button>
-      <button class="filter-pill" type="button" aria-pressed="false" data-cat="jardinagem">Jardinagem</button>
+      <button class="filter-pill" type="button" aria-pressed="false" data-cat="gadgets-e-dispositivos" aria-label="Acessórios para Dispositivos Móveis e Gadgets">Gadgets</button>
+      <button class="filter-pill" type="button" aria-pressed="false" data-cat="utensilios-domesticos" aria-label="Utensílios Domésticos e Utilidades">Casa</button>
+      <button class="filter-pill" type="button" aria-pressed="false" data-cat="organizacao-de-escritorio" aria-label="Organização de Escritório">Escritório</button>
+      <button class="filter-pill" type="button" aria-pressed="false" data-cat="articulados-e-fidgets" aria-label="Dispositivos Articulados e Fidgets">Articulados</button>
+      <button class="filter-pill" type="button" aria-pressed="false" data-cat="acessorios-pessoais-e-chaveiros" aria-label="Acessórios Pessoais e Chaveiros">Chaveiros</button>
     </div>
 
     <!-- View Switcher Toolbar -->
     <div class="view-toolbar">
-      <div class="results-count" id="resultsCount" role="status" aria-live="polite">Exibindo 44 itens</div>
+      <div class="results-count" id="resultsCount" role="status" aria-live="polite">10 peças</div>
       <div class="view-switch" role="group" aria-label="Alterar visualização do catálogo">
         <button class="view-btn active" type="button" id="gridBtn" aria-label="Modo Grade" aria-pressed="true">
           <img src="assets/icons/view-grid.svg" alt="" aria-hidden="true">
@@ -331,1507 +385,350 @@
     </div>
     </div>
 
-    <div class="category-context" id="categoryContext" role="status" aria-live="polite">
-      <h2>Todos os produtos</h2>
-      <span>Explore 44 soluções para diferentes espaços, rotinas e ideias.</span>
-    </div>
-
     <!-- Catalog Items Grid -->
     <div class="cat-grid grid-mode" id="catGrid">
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Dock organizador de mesa" data-title="Dock organizador de mesa" data-keywords="dock organizador de mesa docking station organizador desktop celular smartphone carteira chaves home office">
+      <article class="cat-card-full reveal" data-category="gadgets-e-dispositivos" data-product="Suporte Dobrável para Smartphone Print-in-Place" data-title="Suporte Dobrável para Smartphone Print-in-Place" data-keywords="Suporte Dobrável para Smartphone Print-in-Place Acessórios para Dispositivos Móveis e Gadgets suporte-dobravel-smartphone-print-in-place PLA / PETG Print-in-Place Sem Suportes Ajuste Multiângulo Ultra Leve smartphone celular suporte gadgets escritorio print-in-place">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/dock-organizador-mesa.webp" alt="Referência visual de um dock organizador de mesa para celular e objetos pessoais" width="960" height="720" loading="eager" fetchpriority="high" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/gadgets-e-dispositivos/suporte-dobravel-smartphone-print-in-place.webp" alt="Imagem ilustrativa de Suporte Dobrável para Smartphone Print-in-Place" width="960" height="720" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
+          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">01</span>
+              <span class="category-badge">Gadgets</span>
+              <span class="material-tag">PLA / PETG</span>
             </div>
-            <h3>Dock organizador de mesa</h3>
+            <h3><button class="card-open" type="button" aria-label="Suporte Dobrável para Smartphone Print-in-Place">Suporte de celular</button></h3>
             <div class="product-card-details" id="product-card-details-01">
               <div class="product-card-details-inner">
-                <p>Reúne celular, carteira, chaves e pequenos objetos em um só lugar para deixar a rotina mais organizada.</p>
+                <p>Suporte ultraleve (13g) e ultraportátil para smartphone com mecanismo dobrável impresso em peça única (print-in-place), sem necessidade de montagem. Compatível com posições vertical e horizontal.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Home Office</span>
-                  <span class="spec-chip">Funcional</span>
+                  <span class="spec-chip">PLA / PETG</span>
+                  <span class="spec-chip">Até 2 cores</span>
+                  <span class="spec-chip">Print-in-Place</span>
+                  <span class="spec-chip">Sem Suportes</span>
+                  <span class="spec-chip">Ajuste Multiângulo</span>
+                  <span class="spec-chip">Ultra Leve</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-01">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Dock%20organizador%20de%20mesa." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Dock organizador de mesa pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>12,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20Dobr%C3%A1vel%20para%20Smartphone%20Print-in-Place." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte Dobrável para Smartphone Print-in-Place pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Suporte para celular" data-title="Suporte para celular" data-keywords="suporte para celular suporte celular porta celular smartphone telefone mesa home office">
+      <article class="cat-card-full reveal" data-category="gadgets-e-dispositivos" data-product="Suporte Ergonômico de Mesa para Headsets" data-title="Suporte Ergonômico de Mesa para Headsets" data-keywords="Suporte Ergonômico de Mesa para Headsets Acessórios para Dispositivos Móveis e Gadgets suporte-ergonomico-headset PLA / PETG / TPU Design Ergonômico Alta Estabilidade Personalizável em até 3 cores headset gamer setup escritorio audio">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/suporte-celular.webp" alt="Referência visual de um suporte de mesa para celular" width="960" height="720" loading="eager" fetchpriority="high" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/gadgets-e-dispositivos/suporte-ergonomico-headset.webp" alt="Imagem ilustrativa de Suporte Ergonômico de Mesa para Headsets" width="960" height="720" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">02</span>
+              <span class="category-badge">Gadgets</span>
+              <span class="material-tag">PLA / PETG / TPU</span>
             </div>
-            <h3>Suporte para celular</h3>
+            <h3><button class="card-open" type="button" aria-label="Suporte Ergonômico de Mesa para Headsets">Suporte de headset</button></h3>
             <div class="product-card-details" id="product-card-details-02">
               <div class="product-card-details-inner">
-                <p>Mantém o celular visível e sempre à mão na mesa, bancada ou área de trabalho.</p>
+                <p>Suporte de mesa com design geométrico moderno para fones de ouvido e headsets gamer. Oferece alta estabilidade estrutural e apoio superior suave.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Funcional</span>
-                  <span class="spec-chip">Home Office</span>
-                  <span class="spec-chip">Presente</span>
+                  <span class="spec-chip">PLA / PETG / TPU</span>
+                  <span class="spec-chip">Até 3 cores</span>
+                  <span class="spec-chip">Design Ergonômico</span>
+                  <span class="spec-chip">Alta Estabilidade</span>
+                  <span class="spec-chip">Personalizável em até 3 cores</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-02">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20celular." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para celular pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>24,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20Ergon%C3%B4mico%20de%20Mesa%20para%20Headsets." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte Ergonômico de Mesa para Headsets pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Organizador de mesa" data-title="Organizador de mesa" data-keywords="organizador de mesa organização porta objetos escritório escritorio home office bancada">
+      <article class="cat-card-full reveal" data-category="utensilios-domesticos" data-product="Prendedor de Embalagens Print-in-Place (Kit com 5)" data-title="Prendedor de Embalagens Print-in-Place (Kit com 5)" data-keywords="Prendedor de Embalagens Print-in-Place (Kit com 5) Utensílios Domésticos e Utilidades prendedor-embalagens-veda-sacos-kit PETG / PLA Print-in-Place Vedação Hermética Kit com 5 unidades cozinha utensilios organizacao veda-saco">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/organizador-mesa.webp" alt="Referência visual de um organizador de mesa com compartimentos para pequenos objetos" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/utensilios-domesticos/prendedor-embalagens-veda-sacos-kit.webp" alt="Imagem ilustrativa de Prendedor de Embalagens Print-in-Place (Kit com 5)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
+          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">03</span>
+              <span class="category-badge">Casa</span>
+              <span class="material-tag">PETG / PLA</span>
             </div>
-            <h3>Organizador de mesa</h3>
+            <h3><button class="card-open" type="button" aria-label="Prendedor de Embalagens Print-in-Place (Kit com 5)">Prendedor de saco</button></h3>
             <div class="product-card-details" id="product-card-details-03">
               <div class="product-card-details-inner">
-                <p>Ajuda a distribuir os itens de uso diário e libera espaço para uma mesa mais prática.</p>
+                <p>Veda-saco funcional com trava mecânica excêntrica. Impresso em peça única com dobradiça integrada. Garante vedação hermética para sacos de mantimentos, cafés e petiscos.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Escritório</span>
-                  <span class="spec-chip">Praticidade</span>
+                  <span class="spec-chip">PETG / PLA</span>
+                  <span class="spec-chip">Até 2 cores</span>
+                  <span class="spec-chip">Print-in-Place</span>
+                  <span class="spec-chip">Vedação Hermética</span>
+                  <span class="spec-chip">Kit com 5 unidades</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-03">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20mesa." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de mesa pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>16,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Prendedor%20de%20Embalagens%20Print-in-Place%20(Kit%20com%205)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Prendedor de Embalagens Print-in-Place (Kit com 5) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Porta-canetas moderno" data-title="Porta-canetas moderno" data-keywords="porta-canetas porta canetas porta lápis porta lapis canetas escritório escritorio moderno">
+      <article class="cat-card-full reveal" data-category="utensilios-domesticos" data-product="Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)" data-title="Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)" data-keywords="Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo) Utensílios Domésticos e Utilidades indicador-magnetico-lava-loucas PLA Fixação Magnética Texto em Alto Contraste Mecanismo Deslizante cozinha lava-loucas utilidades ima">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/porta-canetas-moderno.webp" alt="Referência visual de um porta-canetas moderno para mesa de trabalho" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/utensilios-domesticos/indicador-magnetico-lava-loucas.webp" alt="Imagem ilustrativa de Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">04</span>
+              <span class="category-badge">Casa</span>
+              <span class="material-tag">PLA</span>
             </div>
-            <h3>Porta-canetas moderno</h3>
+            <h3><button class="card-open" type="button" aria-label="Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)">Indicador de louça</button></h3>
             <div class="product-card-details" id="product-card-details-04">
               <div class="product-card-details-inner">
-                <p>Guarda canetas e lápis com um visual contemporâneo que também valoriza a decoração.</p>
+                <p>Placa de sinalização para lava-louças com trava deslizante e ímãs de neodímio embutidos. Identificação rápida de louça LIMPA ou SUJA com texto em alto contraste.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Escritório</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Design</span>
+                  <span class="spec-chip">PLA</span>
+                  <span class="spec-chip">Até 4 cores</span>
+                  <span class="spec-chip">Fixação Magnética</span>
+                  <span class="spec-chip">Texto em Alto Contraste</span>
+                  <span class="spec-chip">Mecanismo Deslizante</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-04">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-canetas%20moderno." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-canetas moderno pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>12,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Indicador%20Magn%C3%A9tico%20Deslizante%20para%20Lava-Lou%C3%A7as%20(Limpo%2FSujo)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Suporte para notebook" data-title="Suporte para notebook" data-keywords="suporte para notebook base apoio laptop computador home office escritório escritorio">
+      <article class="cat-card-full reveal" data-category="organizacao-de-escritorio" data-product="Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)" data-title="Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)" data-keywords="Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4) Organização de Escritório clipes-gestao-cabos-mesa-kit PLA / TPU Fixação por Pressão Flexível Kit com 4 unidades cabos escritorio organizacao setup">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/suporte-notebook.webp" alt="Referência visual de um suporte de mesa para notebook" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/organizacao-de-escritorio/clipes-gestao-cabos-mesa-kit.webp" alt="Imagem ilustrativa de Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">05</span>
+              <span class="category-badge">Escritório</span>
+              <span class="material-tag">PLA / TPU</span>
             </div>
-            <h3>Suporte para notebook</h3>
+            <h3><button class="card-open" type="button" aria-label="Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)">Clipe de cabo</button></h3>
             <div class="product-card-details" id="product-card-details-05">
               <div class="product-card-details-inner">
-                <p>Eleva o notebook e aproveita melhor o espaço da mesa para uma estação de trabalho organizada.</p>
+                <p>Organizadores flexíveis de cabos para fixação por pressão em bordas de mesa. Mantém cabos de carregador e dados organizados e ao alcance das mãos.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Home Office</span>
-                  <span class="spec-chip">Funcional</span>
-                  <span class="spec-chip">Organização</span>
+                  <span class="spec-chip">PLA / TPU</span>
+                  <span class="spec-chip">Até 2 cores</span>
+                  <span class="spec-chip">Fixação por Pressão</span>
+                  <span class="spec-chip">Flexível</span>
+                  <span class="spec-chip">Kit com 4 unidades</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-05">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20notebook." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para notebook pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>14,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Clipes%20de%20Gest%C3%A3o%20de%20Cabos%20para%20Borda%20de%20Mesa%20(Kit%20com%204)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="escritorio" data-product="Organizador de cabos" data-title="Organizador de cabos" data-keywords="organizador de cabos fios passa cabos prende cabos carregador USB mesa">
+      <article class="cat-card-full reveal" data-category="organizacao-de-escritorio" data-product="Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)" data-title="Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)" data-keywords="Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi) Organização de Escritório porta-canetas-geometrico-moai PLA Silk / PLA Mármore Design Escultórico Acabamento Premium Leve e Resistente escritorio decoracao organizador porta-canetas">
         <figure class="product-media">
-          <img src="assets/catalogo/escritorio/organizador-cabos.webp" alt="Referência visual de um organizador para cabos e fios sobre a mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/organizacao-de-escritorio/porta-canetas-geometrico-moai.webp" alt="Imagem ilustrativa de Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Escritório &amp; Home Office</span>
-              <span class="layer-tag">06</span>
+              <span class="category-badge">Escritório</span>
+              <span class="material-tag">PLA Silk / PLA Mármore</span>
             </div>
-            <h3>Organizador de cabos</h3>
+            <h3><button class="card-open" type="button" aria-label="Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)">Porta-canetas</button></h3>
             <div class="product-card-details" id="product-card-details-06">
               <div class="product-card-details-inner">
-                <p>Mantém fios e carregadores guiados, acessíveis e longe da bagunça do dia a dia.</p>
+                <p>Porta-canetas sofisticado com acabamento em padrão estético geométrico. Ideal para decoração de escritórios modernistas e setups de trabalho.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Tecnologia</span>
-                  <span class="spec-chip">Funcional</span>
+                  <span class="spec-chip">PLA Silk / PLA Mármore</span>
+                  <span class="spec-chip">Até 3 cores</span>
+                  <span class="spec-chip">Design Escultórico</span>
+                  <span class="spec-chip">Acabamento Premium</span>
+                  <span class="spec-chip">Leve e Resistente</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-06">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20cabos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de cabos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>18,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-Canetas%20Escult%C3%B3rico%20Geom%C3%A9trico%20(Estilo%20Moai%2FVoronoi)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Organizador de brocas" data-title="Organizador de brocas" data-keywords="organizador de brocas porta brocas broca furadeira oficina ferramentas bancada">
+      <article class="cat-card-full reveal" data-category="articulados-e-fidgets" data-product="Dragão Articulado Flexível (Flexi Dragon)" data-title="Dragão Articulado Flexível (Flexi Dragon)" data-keywords="Dragão Articulado Flexível (Flexi Dragon) Dispositivos Articulados e Fidgets dragao-articulado-flexivel PLA Silk / Multicolor Print-in-Place Totalmente Articulado Efeito Visual Multicolorido fidget articulado dragao colecionavel brinquedo">
         <figure class="product-media">
-          <img src="assets/catalogo/oficina/organizador-brocas.webp" alt="Referência visual de um conjunto de brocas reunidas para organização" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/articulados-e-fidgets/dragao-articulado-flexivel.webp" alt="Imagem ilustrativa de Dragão Articulado Flexível (Flexi Dragon)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
+          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">07</span>
+              <span class="category-badge">Articulados</span>
+              <span class="material-tag">PLA Silk / Multicolor</span>
             </div>
-            <h3>Organizador de brocas</h3>
+            <h3><button class="card-open" type="button" aria-label="Dragão Articulado Flexível (Flexi Dragon)">Dragão articulado</button></h3>
             <div class="product-card-details" id="product-card-details-07">
               <div class="product-card-details-inner">
-                <p>Mantém as brocas separadas e fáceis de localizar quando cada minuto de trabalho importa.</p>
+                <p>Criatura mítica totalmente articulada produzida no método print-in-place. Movimento fluido e tátil incrível com detalhes impressionantes ao longo de todo o corpo.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Oficina</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Ferramentas</span>
+                  <span class="spec-chip">PLA Silk / Multicolor</span>
+                  <span class="spec-chip">Até 4 cores</span>
+                  <span class="spec-chip">Print-in-Place</span>
+                  <span class="spec-chip">Totalmente Articulado</span>
+                  <span class="spec-chip">Efeito Visual Multicolorido</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-07">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20brocas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de brocas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>25,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Drag%C3%A3o%20Articulado%20Flex%C3%ADvel%20(Flexi%20Dragon)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Dragão Articulado Flexível (Flexi Dragon) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Organizador de chaves" data-title="Organizador de chaves" data-keywords="organizador de chaves porta chaves ferramenta chaves de boca combinadas oficina bancada">
+      <article class="cat-card-full reveal" data-category="articulados-e-fidgets" data-product="Interruptor Háptico de Bolso (Fidget Toggle Switch)" data-title="Interruptor Háptico de Bolso (Fidget Toggle Switch)" data-keywords="Interruptor Háptico de Bolso (Fidget Toggle Switch) Dispositivos Articulados e Fidgets interruptor-haptico-fidget-toggle PLA / PETG Resposta Háptica Satisfatória Tamanho de Bolso Design Industrial fidget antiestresse sensorial fidget-toy">
         <figure class="product-media">
-          <img src="assets/catalogo/oficina/organizador-chaves.webp" alt="Referência visual de um organizador para chaves de oficina" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/articulados-e-fidgets/interruptor-haptico-fidget-toggle.webp" alt="Imagem ilustrativa de Interruptor Háptico de Bolso (Fidget Toggle Switch)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">08</span>
+              <span class="category-badge">Articulados</span>
+              <span class="material-tag">PLA / PETG</span>
             </div>
-            <h3>Organizador de chaves</h3>
+            <h3><button class="card-open" type="button" aria-label="Interruptor Háptico de Bolso (Fidget Toggle Switch)">Interruptor fidget</button></h3>
             <div class="product-card-details" id="product-card-details-08">
               <div class="product-card-details-inner">
-                <p>Deixa as chaves de oficina visíveis e ordenadas para agilizar os reparos cotidianos.</p>
+                <p>Brinquedo sensorial e antiestresse de bolso que simula o clique satisfatório de um interruptor mecânico industrial. Excelente sensação tátil e sonora.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Ferramentas</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Oficina</span>
+                  <span class="spec-chip">PLA / PETG</span>
+                  <span class="spec-chip">Até 3 cores</span>
+                  <span class="spec-chip">Resposta Háptica Satisfatória</span>
+                  <span class="spec-chip">Tamanho de Bolso</span>
+                  <span class="spec-chip">Design Industrial</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-08">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20chaves." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de chaves pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>14,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Interruptor%20H%C3%A1ptico%20de%20Bolso%20(Fidget%20Toggle%20Switch)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Interruptor Háptico de Bolso (Fidget Toggle Switch) pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Porta-parafusos" data-title="Porta-parafusos" data-keywords="porta-parafusos porta parafusos organizador porcas peças pequenas oficina">
+      <article class="cat-card-full reveal" data-category="acessorios-pessoais-e-chaveiros" data-product="Chaveiro Modular Bloco de Encaixe com Iniciais" data-title="Chaveiro Modular Bloco de Encaixe com Iniciais" data-keywords="Chaveiro Modular Bloco de Encaixe com Iniciais Acessórios Pessoais e Chaveiros chaveiro-bloco-de-encaixe-inicial PLA Personalizável Cores Vibrantes Incluso Argola Metálica chaveiro personalizado presente acessorios">
         <figure class="product-media">
-          <img src="assets/catalogo/oficina/porta-parafusos.webp" alt="Referência visual de um porta-parafusos com compartimentos separados" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/acessorios-pessoais-e-chaveiros/chaveiro-bloco-de-encaixe-inicial.webp" alt="Imagem ilustrativa de Chaveiro Modular Bloco de Encaixe com Iniciais" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">09</span>
+              <span class="category-badge">Chaveiros</span>
+              <span class="material-tag">PLA</span>
             </div>
-            <h3>Porta-parafusos</h3>
+            <h3><button class="card-open" type="button" aria-label="Chaveiro Modular Bloco de Encaixe com Iniciais">Chaveiro de iniciais</button></h3>
             <div class="product-card-details" id="product-card-details-09">
               <div class="product-card-details-inner">
-                <p>Separa parafusos e pequenas peças para que tudo fique disponível na hora da montagem.</p>
+                <p>Chaveiro personalizado em formato de bloco de montar clássico, com letras e iniciais em relevo com cores contrastantes.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Oficina</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Praticidade</span>
+                  <span class="spec-chip">PLA</span>
+                  <span class="spec-chip">Até 3 cores</span>
+                  <span class="spec-chip">Personalizável</span>
+                  <span class="spec-chip">Cores Vibrantes</span>
+                  <span class="spec-chip">Incluso Argola Metálica</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-09">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-parafusos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-parafusos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>7,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Chaveiro%20Modular%20Bloco%20de%20Encaixe%20com%20Iniciais." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Chaveiro Modular Bloco de Encaixe com Iniciais pelo WhatsApp">
+              Orçar
+            </a>
+          </div>
         </div>
       </article>
 
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Porta-bits" data-title="Porta-bits" data-keywords="porta-bits porta bits organizador bits ponteiras pontas parafusadeira oficina">
+      <article class="cat-card-full reveal" data-category="acessorios-pessoais-e-chaveiros" data-product="Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)" data-title="Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)" data-keywords="Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs) Acessórios Pessoais e Chaveiros chaveiro-miniatura-colecionavel PLA Miniatura Detalhada Item Colecionável Super Leve chaveiro miniatura colecionavel moda">
         <figure class="product-media">
-          <img src="assets/catalogo/oficina/porta-bits.webp" alt="Referência visual de um porta-bits com ponteiras organizadas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
+          <img src="assets/catalogo/acessorios-pessoais-e-chaveiros/chaveiro-miniatura-colecionavel.webp" alt="Imagem ilustrativa de Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)" width="960" height="720" loading="lazy" decoding="async">
+          <figcaption>Imagem ilustrativa</figcaption>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">10</span>
+              <span class="category-badge">Chaveiros</span>
+              <span class="material-tag">PLA</span>
             </div>
-            <h3>Porta-bits</h3>
+            <h3><button class="card-open" type="button" aria-label="Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)">Chaveiro miniatura</button></h3>
             <div class="product-card-details" id="product-card-details-10">
               <div class="product-card-details-inner">
-                <p>Organiza bits e ponteiras de forma compacta, facilitando a escolha durante cada serviço.</p>
+                <p>Chaveiro em miniatura icônico e divertido impresso em alta resolução. Peça leve, estilosa e resistente para chaves e mochilas.</p>
                 <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Ferramentas</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Compacto</span>
+                  <span class="spec-chip">PLA</span>
+                  <span class="spec-chip">Até 3 cores</span>
+                  <span class="spec-chip">Miniatura Detalhada</span>
+                  <span class="spec-chip">Item Colecionável</span>
+                  <span class="spec-chip">Super Leve</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-10">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-bits." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-bits pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Suporte para furadeira" data-title="Suporte para furadeira" data-keywords="suporte para furadeira porta furadeira suporte ferramenta parafusadeira oficina bancada">
-        <figure class="product-media">
-          <img src="assets/catalogo/oficina/suporte-furadeira.webp" alt="Referência visual de um suporte projetado para acomodar furadeira" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">11</span>
-            </div>
-            <h3>Suporte para furadeira</h3>
-            <div class="product-card-details" id="product-card-details-11">
-              <div class="product-card-details-inner">
-                <p>Reserva um local definido para guardar a furadeira e manter a bancada desimpedida.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Oficina</span>
-                  <span class="spec-chip">Ferramentas</span>
-                  <span class="spec-chip">Organização</span>
-                </div>
-              </div>
-            </div>
+          <div class="product-card-foot">
+            <span class="price-label"><span class="currency">R$</span>8,00</span>
+            <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Chaveiro%20Miniatura%20Colecion%C3%A1vel%20(Balloon%20Dog%20%2F%20Mini%20Crocs)." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs) pelo WhatsApp">
+              Orçar
+            </a>
           </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-11">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20furadeira." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para furadeira pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="oficina" data-product="Organizador de bancada" data-title="Organizador de bancada" data-keywords="organizador de bancada organização oficina porta ferramentas acessórios garagem">
-        <figure class="product-media">
-          <img src="assets/catalogo/oficina/organizador-bancada.webp" alt="Referência visual de um organizador de bancada com ferramentas e acessórios" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Oficina &amp; Ferramentas</span>
-              <span class="layer-tag">12</span>
-            </div>
-            <h3>Organizador de bancada</h3>
-            <div class="product-card-details" id="product-card-details-12">
-              <div class="product-card-details-inner">
-                <p>Agrupa ferramentas e acessórios usados com frequência para uma bancada mais eficiente.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Bancada</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Oficina</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-12">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20bancada." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de bancada pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Cabo personalizado para espetos" data-title="Cabo personalizado para espetos" data-keywords="cabo personalizado para espetos cabo espeto nome churrasco churrasqueira">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/cabo-personalizado-espetos.webp" alt="Referência visual de espetos dispostos em uma estação de churrasco" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">13</span>
-            </div>
-            <h3>Cabo personalizado para espetos</h3>
-            <div class="product-card-details" id="product-card-details-13">
-              <div class="product-card-details-inner">
-                <p>Dá identidade aos espetos com nome, palavra ou detalhe escolhido para cada ocasião.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Churrasco</span>
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-13">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Cabo%20personalizado%20para%20espetos.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Cabo personalizado para espetos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Descanso para espetos" data-title="Descanso para espetos" data-keywords="descanso para espetos apoio suporte espeto churrasco churrasqueira">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/descanso-espetos.webp" alt="Referência visual de espetos apoiados em um descanso para churrasco" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">14</span>
-            </div>
-            <h3>Descanso para espetos</h3>
-            <div class="product-card-details" id="product-card-details-14">
-              <div class="product-card-details-inner">
-                <p>Oferece um apoio dedicado para acomodar os espetos entre o preparo e o serviço.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Churrasco</span>
-                  <span class="spec-chip">Funcional</span>
-                  <span class="spec-chip">Praticidade</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-14">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Descanso%20para%20espetos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Descanso para espetos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Porta-latas" data-title="Porta-latas" data-keywords="porta-latas porta latas suporte lata bebida cerveja refrigerante churrasco">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/porta-latas.webp" alt="Referência visual de uma lata acomodada em um porta-latas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">15</span>
-            </div>
-            <h3>Porta-latas</h3>
-            <div class="product-card-details" id="product-card-details-15">
-              <div class="product-card-details-inner">
-                <p>Acomoda a lata com praticidade e acrescenta personalidade à mesa ou área de lazer.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Bebidas</span>
-                  <span class="spec-chip">Churrasco</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-15">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-latas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-latas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Porta-garrafas" data-title="Porta-garrafas" data-keywords="porta-garrafas porta garrafas suporte garrafa bebida cerveja churrasco">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/porta-garrafas.webp" alt="Referência visual de uma garrafa acomodada em um porta-garrafas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">16</span>
-            </div>
-            <h3>Porta-garrafas</h3>
-            <div class="product-card-details" id="product-card-details-16">
-              <div class="product-card-details-inner">
-                <p>Mantém a garrafa em um apoio próprio e ajuda a compor o espaço de bebidas.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Bebidas</span>
-                  <span class="spec-chip">Churrasco</span>
-                  <span class="spec-chip">Funcional</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-16">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-garrafas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-garrafas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Abridor de garrafas personalizado" data-title="Abridor de garrafas personalizado" data-keywords="abridor de garrafas personalizado abre garrafa nome mensagem cerveja churrasco">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/abridor-garrafas-personalizado.webp" alt="Referência visual de um abridor de garrafas portátil" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">17</span>
-            </div>
-            <h3>Abridor de garrafas personalizado</h3>
-            <div class="product-card-details" id="product-card-details-17">
-              <div class="product-card-details-inner">
-                <p>Une utilidade e significado em um abridor que pode receber nome ou mensagem.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Bebidas</span>
-                  <span class="spec-chip">Churrasco</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-17">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Abridor%20de%20garrafas%20personalizado.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Abridor de garrafas personalizado pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="churrasco" data-product="Suporte para temperos" data-title="Suporte para temperos" data-keywords="suporte para temperos porta temperos organizador condimentos sal cozinha churrasco">
-        <figure class="product-media">
-          <img src="assets/catalogo/churrasco/suporte-temperos.webp" alt="Referência visual de recipientes de temperos organizados em um suporte" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Churrasco</span>
-              <span class="layer-tag">18</span>
-            </div>
-            <h3>Suporte para temperos</h3>
-            <div class="product-card-details" id="product-card-details-18">
-              <div class="product-card-details-inner">
-                <p>Reúne os temperos mais usados para agilizar o preparo e organizar a bancada.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Churrasco</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Cozinha</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-18">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20temperos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para temperos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Organizador de console" data-title="Organizador de console" data-keywords="organizador de console central automotivo porta objetos carro automóvel automovel">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/organizador-console.webp" alt="Referência visual de um inserto divisório para console automotivo" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">19</span>
-            </div>
-            <h3>Organizador de console</h3>
-            <div class="product-card-details" id="product-card-details-19">
-              <div class="product-card-details-inner">
-                <p>Aproveita melhor o console para manter objetos pequenos separados e ao alcance.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Funcional</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-19">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20console." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de console pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Suporte para celular automotivo" data-title="Suporte para celular automotivo" data-keywords="suporte para celular automotivo suporte celular carro porta smartphone GPS veículo veiculo">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/suporte-celular-automotivo.webp" alt="Referência visual de um celular acomodado em um suporte automotivo" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">20</span>
-            </div>
-            <h3>Suporte para celular automotivo</h3>
-            <div class="product-card-details" id="product-card-details-20">
-              <div class="product-card-details-inner">
-                <p>Mantém o celular em uma posição prática no veículo durante os deslocamentos.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Celular</span>
-                  <span class="spec-chip">Funcional</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-20">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20celular%20automotivo." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para celular automotivo pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Gancho para banco" data-title="Gancho para banco" data-keywords="gancho para banco automotivo cabide banco carro sacola bolsa encosto">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/gancho-banco.webp" alt="Referência visual de uma bolsa organizadora presa às hastes do apoio de cabeça" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">21</span>
-            </div>
-            <h3>Gancho para banco</h3>
-            <div class="product-card-details" id="product-card-details-21">
-              <div class="product-card-details-inner">
-                <p>Cria um ponto de apoio para bolsas e sacolas, ajudando a liberar os assentos.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Praticidade</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-21">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Gancho%20para%20banco." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Gancho para banco pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Porta-óculos" data-title="Porta-óculos" data-keywords="porta-óculos porta oculos suporte óculos oculos de sol carro automotivo">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/porta-oculos.webp" alt="Referência visual de um clipe automotivo projetado para acomodar óculos" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">22</span>
-            </div>
-            <h3>Porta-óculos</h3>
-            <div class="product-card-details" id="product-card-details-22">
-              <div class="product-card-details-inner">
-                <p>Mantém os óculos protegidos e fáceis de encontrar dentro do veículo.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Funcional</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-22">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-%C3%B3culos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-óculos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Porta-moedas" data-title="Porta-moedas" data-keywords="porta-moedas porta moedas organizador moedas console carro automotivo">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/porta-moedas.webp" alt="Referência visual de moedas organizadas em um porta-moedas para carro" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">23</span>
-            </div>
-            <h3>Porta-moedas</h3>
-            <div class="product-card-details" id="product-card-details-23">
-              <div class="product-card-details-inner">
-                <p>Organiza moedas em um local definido para pequenas despesas durante o trajeto.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Compacto</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-23">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-moedas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-moedas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="carro" data-product="Organizador de porta-malas" data-title="Organizador de porta-malas" data-keywords="organizador de porta-malas porta malas bagageiro automotivo carro viagem">
-        <figure class="product-media">
-          <img src="assets/catalogo/carro/organizador-porta-malas.webp" alt="Referência visual de objetos acomodados em um organizador no porta-malas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Carro</span>
-              <span class="layer-tag">24</span>
-            </div>
-            <h3>Organizador de porta-malas</h3>
-            <div class="product-card-details" id="product-card-details-24">
-              <div class="product-card-details-inner">
-                <p>Ajuda a separar objetos transportados e reduz a bagunça no espaço de carga.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Automotivo</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Viagem</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-24">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20porta-malas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de porta-malas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="cafe" data-product="Descanso de copo" data-title="Descanso de copo" data-keywords="descanso de copo porta copo apoio coaster caneca café cafe bebida">
-        <figure class="product-media">
-          <img src="assets/catalogo/cafe/descanso-copo.webp" alt="Referência visual de um copo sobre um descanso de mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Café &amp; Bebidas</span>
-              <span class="layer-tag">25</span>
-            </div>
-            <h3>Descanso de copo</h3>
-            <div class="product-card-details" id="product-card-details-25">
-              <div class="product-card-details-inner">
-                <p>Apoia copos e canecas, protege a superfície e acrescenta um detalhe especial à mesa.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Café</span>
-                  <span class="spec-chip">Bebidas</span>
-                  <span class="spec-chip">Decoração</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-25">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Descanso%20de%20copo." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Descanso de copo pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="cafe" data-product="Organizador de cápsulas" data-title="Organizador de cápsulas" data-keywords="organizador de cápsulas capsulas porta cápsulas cafe café pod cozinha">
-        <figure class="product-media">
-          <img src="assets/catalogo/cafe/organizador-capsulas.webp" alt="Referência visual de cápsulas de café dispostas em um organizador" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Café &amp; Bebidas</span>
-              <span class="layer-tag">26</span>
-            </div>
-            <h3>Organizador de cápsulas</h3>
-            <div class="product-card-details" id="product-card-details-26">
-              <div class="product-card-details-inner">
-                <p>Mantém as cápsulas ordenadas e prontas para escolher no momento do café.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Café</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Cozinha</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-26">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20c%C3%A1psulas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de cápsulas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="cafe" data-product="Porta-canecas" data-title="Porta-canecas" data-keywords="porta-canecas porta canecas suporte caneca xícara xicara café cafe cozinha">
-        <figure class="product-media">
-          <img src="assets/catalogo/cafe/porta-canecas.webp" alt="Referência visual de canecas acomodadas em um porta-canecas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Café &amp; Bebidas</span>
-              <span class="layer-tag">27</span>
-            </div>
-            <h3>Porta-canecas</h3>
-            <div class="product-card-details" id="product-card-details-27">
-              <div class="product-card-details-inner">
-                <p>Deixa as canecas reunidas e transforma a coleção em parte da decoração.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Café</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Decoração</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-27">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-canecas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-canecas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="cafe" data-product="Porta-filtro de café" data-title="Porta-filtro de café" data-keywords="porta-filtro de café porta filtro cafe suporte papel café coado">
-        <figure class="product-media">
-          <img src="assets/catalogo/cafe/porta-filtro-cafe.webp" alt="Referência visual de filtros de café acomodados em um porta-filtro" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Café &amp; Bebidas</span>
-              <span class="layer-tag">28</span>
-            </div>
-            <h3>Porta-filtro de café</h3>
-            <div class="product-card-details" id="product-card-details-28">
-              <div class="product-card-details-inner">
-                <p>Guarda os filtros de maneira acessível e ajuda a manter o cantinho do café em ordem.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Café</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Cozinha</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-28">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-filtro%20de%20caf%C3%A9." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-filtro de café pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="cafe" data-product="Porta-garrafa" data-title="Porta-garrafa" data-keywords="porta-garrafa porta garrafa suporte vinho bebida bar mesa">
-        <figure class="product-media">
-          <img src="assets/catalogo/cafe/porta-garrafa.webp" alt="Referência visual de uma garrafa posicionada em um porta-garrafa de mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Café &amp; Bebidas</span>
-              <span class="layer-tag">29</span>
-            </div>
-            <h3>Porta-garrafa</h3>
-            <div class="product-card-details" id="product-card-details-29">
-              <div class="product-card-details-inner">
-                <p>Valoriza a apresentação da garrafa e oferece um apoio próprio para servir ou decorar.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Bebidas</span>
-                  <span class="spec-chip">Decoração</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-29">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-garrafa." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-garrafa pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="geek" data-product="Dock para celular" data-title="Dock para celular" data-keywords="dock para celular docking station base smartphone suporte telefone setup geek">
-        <figure class="product-media">
-          <img src="assets/catalogo/geek/dock-celular.webp" alt="Referência visual de um celular apoiado em um dock de mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Geek &amp; Tecnologia</span>
-              <span class="layer-tag">30</span>
-            </div>
-            <h3>Dock para celular</h3>
-            <div class="product-card-details" id="product-card-details-30">
-              <div class="product-card-details-inner">
-                <p>Cria um ponto fixo para apoiar o celular e compor um setup mais organizado.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Tecnologia</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Geek</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-30">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Dock%20para%20celular." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Dock para celular pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="geek" data-product="Suporte para controle de videogame" data-title="Suporte para controle de videogame" data-keywords="suporte para controle de videogame porta controle joystick gamepad gamer games console">
-        <figure class="product-media">
-          <img src="assets/catalogo/geek/suporte-controle-videogame.webp" alt="Referência visual de um controle de videogame apoiado em um suporte" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Geek &amp; Tecnologia</span>
-              <span class="layer-tag">31</span>
-            </div>
-            <h3>Suporte para controle de videogame</h3>
-            <div class="product-card-details" id="product-card-details-31">
-              <div class="product-card-details-inner">
-                <p>Organiza o setup e mantém o controle em destaque quando não está em uso.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Games</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Geek</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-31">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20controle%20de%20videogame." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para controle de videogame pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="geek" data-product="Suporte para fones" data-title="Suporte para fones" data-keywords="suporte para fones porta fone headset headphone stand fone de ouvido setup">
-        <figure class="product-media">
-          <img src="assets/catalogo/geek/suporte-fones.webp" alt="Referência visual de um fone de ouvido apoiado em um suporte de mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Geek &amp; Tecnologia</span>
-              <span class="layer-tag">32</span>
-            </div>
-            <h3>Suporte para fones</h3>
-            <div class="product-card-details" id="product-card-details-32">
-              <div class="product-card-details-inner">
-                <p>Reserva um lugar para os fones e ajuda a manter a área de trabalho livre.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Tecnologia</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Geek</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-32">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20fones." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para fones pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="geek" data-product="Organizador de carregadores" data-title="Organizador de carregadores" data-keywords="organizador de carregadores porta carregador estação carregamento cabos USB gadgets">
-        <figure class="product-media">
-          <img src="assets/catalogo/geek/organizador-carregadores.webp" alt="Referência visual de carregadores e cabos reunidos em um organizador" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Geek &amp; Tecnologia</span>
-              <span class="layer-tag">33</span>
-            </div>
-            <h3>Organizador de carregadores</h3>
-            <div class="product-card-details" id="product-card-details-33">
-              <div class="product-card-details-inner">
-                <p>Reúne cabos e carregadores para facilitar o uso e evitar acessórios espalhados.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Tecnologia</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Funcional</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-33">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Organizador%20de%20carregadores." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Organizador de carregadores pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="geek" data-product="Suporte para smartwatch" data-title="Suporte para smartwatch" data-keywords="suporte para smartwatch dock base relógio relogio inteligente wearable carregamento">
-        <figure class="product-media">
-          <img src="assets/catalogo/geek/suporte-smartwatch.webp" alt="Referência visual de um smartwatch apoiado em um suporte de mesa" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Geek &amp; Tecnologia</span>
-              <span class="layer-tag">34</span>
-            </div>
-            <h3>Suporte para smartwatch</h3>
-            <div class="product-card-details" id="product-card-details-34">
-              <div class="product-card-details-inner">
-                <p>Mantém o relógio apoiado em um local definido durante o descanso ou carregamento.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Tecnologia</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Geek</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-34">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20smartwatch." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para smartwatch pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Chaveiro personalizado com nome" data-title="Chaveiro personalizado com nome" data-keywords="chaveiro personalizado com nome chaveiro nome lembrança presente chaves">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/chaveiro-personalizado-nome.webp" alt="Referência visual de um chaveiro personalizado com nome" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">35</span>
-            </div>
-            <h3>Chaveiro personalizado com nome</h3>
-            <div class="product-card-details" id="product-card-details-35">
-              <div class="product-card-details-inner">
-                <p>Transforma um nome em um acessório prático, pessoal e fácil de presentear.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Presente</span>
-                  <span class="spec-chip">Acessório</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-35">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Chaveiro%20personalizado%20com%20nome.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Chaveiro personalizado com nome pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Placa decorativa personalizada" data-title="Placa decorativa personalizada" data-keywords="placa decorativa personalizada placa com nome frase decoração decoracao mensagem presente">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/placa-decorativa-personalizada.webp" alt="Referência visual de uma placa decorativa com texto personalizado" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">36</span>
-            </div>
-            <h3>Placa decorativa personalizada</h3>
-            <div class="product-card-details" id="product-card-details-36">
-              <div class="product-card-details-inner">
-                <p>Leva nomes, frases ou símbolos para a decoração de um espaço com significado.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Decoração</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-36">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Placa%20decorativa%20personalizada.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Placa decorativa personalizada pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Porta-retrato personalizado" data-title="Porta-retrato personalizado" data-keywords="porta-retrato personalizado porta retrato moldura foto lembrança presente">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/porta-retrato-personalizado.webp" alt="Referência visual de um porta-retrato com detalhes personalizados" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">37</span>
-            </div>
-            <h3>Porta-retrato personalizado</h3>
-            <div class="product-card-details" id="product-card-details-37">
-              <div class="product-card-details-inner">
-                <p>Emoldura uma lembrança especial com detalhes criados para combinar com a ocasião.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Memórias</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-37">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-retrato%20personalizado.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-retrato personalizado pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Letreiro personalizado" data-title="Letreiro personalizado" data-keywords="letreiro personalizado letreiro com nome palavra frase arte identidade decoração decoracao">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/letreiro-personalizado.webp" alt="Referência visual de um letreiro decorativo com texto personalizado" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">38</span>
-            </div>
-            <h3>Letreiro personalizado</h3>
-            <div class="product-card-details" id="product-card-details-38">
-              <div class="product-card-details-inner">
-                <p>Destaca uma palavra, marca ou mensagem e cria um ponto de atenção na decoração.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Decoração</span>
-                  <span class="spec-chip">Identidade</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-38">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Letreiro%20personalizado.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Letreiro personalizado pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Nome em 3D" data-title="Nome em 3D" data-keywords="nome em 3D nome 3d letras decorativas personalizado presente">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/nome-em-3d.webp" alt="Referência visual de um nome decorativo formado por letras em 3D" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">39</span>
-            </div>
-            <h3>Nome em 3D</h3>
-            <div class="product-card-details" id="product-card-details-39">
-              <div class="product-card-details-inner">
-                <p>Dá volume e presença a um nome para decorar mesas, estantes, portas ou ambientes.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Decoração</span>
-                  <span class="spec-chip">Presente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-39">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Nome%20em%203D.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Nome em 3D pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="personalizados" data-product="Porta-cartões personalizado" data-title="Porta-cartões personalizado" data-keywords="porta-cartões personalizado porta cartoes cartão cartao visita nome identidade">
-        <figure class="product-media">
-          <img src="assets/catalogo/personalizados/porta-cartoes-personalizado.webp" alt="Referência visual de cartões acomodados em um porta-cartões personalizado" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Personalizados</span>
-              <span class="layer-tag">40</span>
-            </div>
-            <h3>Porta-cartões personalizado</h3>
-            <div class="product-card-details" id="product-card-details-40">
-              <div class="product-card-details-inner">
-                <p>Organiza cartões e pode receber nome ou identidade visual para uma apresentação marcante.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Personalizável</span>
-                  <span class="spec-chip">Escritório</span>
-                  <span class="spec-chip">Identidade</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-40">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Porta-cart%C3%B5es%20personalizado.%20Tamb%C3%A9m%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20personaliza%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Porta-cartões personalizado pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="jardinagem" data-product="Vasos modernos" data-title="Vasos modernos" data-keywords="vasos modernos vaso cachepô cachepo planta decoração decoracao jardinagem">
-        <figure class="product-media">
-          <img src="assets/catalogo/jardinagem/vasos-modernos.webp" alt="Referência visual de vasos modernos com pequenas plantas" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Jardinagem</span>
-              <span class="layer-tag">41</span>
-            </div>
-            <h3>Vasos modernos</h3>
-            <div class="product-card-details" id="product-card-details-41">
-              <div class="product-card-details-inner">
-                <p>Acomodam pequenas plantas e acrescentam formas contemporâneas à decoração.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Jardinagem</span>
-                  <span class="spec-chip">Decoração</span>
-                  <span class="spec-chip">Plantas</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-41">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Vasos%20modernos." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Vasos modernos pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="jardinagem" data-product="Suporte para plantas" data-title="Suporte para plantas" data-keywords="suporte para plantas vaso apoio porta vaso jardim jardinagem decoração decoracao">
-        <figure class="product-media">
-          <img src="assets/catalogo/jardinagem/suporte-plantas.webp" alt="Referência visual de um vaso com planta apoiado em um suporte" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Jardinagem</span>
-              <span class="layer-tag">42</span>
-            </div>
-            <h3>Suporte para plantas</h3>
-            <div class="product-card-details" id="product-card-details-42">
-              <div class="product-card-details-inner">
-                <p>Destaca vasos e ajuda a distribuir as plantas de forma mais organizada no ambiente.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Plantas</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Decoração</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-42">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20para%20plantas." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Suporte para plantas pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="jardinagem" data-product="Etiquetas para horta" data-title="Etiquetas para horta" data-keywords="etiquetas para horta identificador marcador plantas plaquinha ervas mudas jardim">
-        <figure class="product-media">
-          <img src="assets/catalogo/jardinagem/etiquetas-horta.webp" alt="Referência visual de etiquetas identificando plantas em uma horta" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Jardinagem</span>
-              <span class="layer-tag">43</span>
-            </div>
-            <h3>Etiquetas para horta</h3>
-            <div class="product-card-details" id="product-card-details-43">
-              <div class="product-card-details-inner">
-                <p>Identificam ervas, hortaliças e mudas para facilitar os cuidados no cultivo.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Horta</span>
-                  <span class="spec-chip">Organização</span>
-                  <span class="spec-chip">Jardinagem</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-43">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Etiquetas%20para%20horta." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Etiquetas para horta pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
-        </div>
-      </article>
-
-      <article class="cat-card-full reveal ripple-host" data-category="jardinagem" data-product="Regador compacto" data-title="Regador compacto" data-keywords="regador compacto pequeno vasos rega plantas jardim jardinagem">
-        <figure class="product-media">
-          <img src="assets/catalogo/jardinagem/regador-compacto.webp" alt="Referência visual de um regador compacto ao lado de pequenos vasos" width="960" height="720" loading="lazy" decoding="async">
-          <figcaption>Referência visual</figcaption>
-        </figure>
-        <div class="product-card-body">
-          <div class="product-card-main">
-            <div class="card-top">
-              <span class="category-badge">Jardinagem</span>
-              <span class="layer-tag">44</span>
-            </div>
-            <h3>Regador compacto</h3>
-            <div class="product-card-details" id="product-card-details-44">
-              <div class="product-card-details-inner">
-                <p>Facilita a rega de vasos e pequenas plantas sem ocupar muito espaço ao guardar.</p>
-                <div class="specs-list" aria-label="Características">
-                  <span class="spec-chip">Jardinagem</span>
-                  <span class="spec-chip">Plantas</span>
-                  <span class="spec-chip">Praticidade</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="product-card-toggle" type="button" aria-expanded="false" aria-controls="product-card-details-44">
-            <span>Ver detalhes</span>
-            <img src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
-          </button>
-          <span class="price-label">Orçamento</span>
-          <a class="card-act-btn" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Regador%20compacto." target="_blank" rel="noopener" aria-label="Solicitar orçamento de Regador compacto pelo WhatsApp">
-            Orçar no WhatsApp
-          </a>
         </div>
       </article>
 
@@ -1845,18 +742,18 @@
         <div class="product-modal-layout">
           <figure class="product-modal-media">
             <img id="productModalImage" src="" alt="" width="960" height="720">
-            <figcaption id="productModalCaption">Referência visual</figcaption>
+            <figcaption id="productModalCaption">Imagem ilustrativa</figcaption>
           </figure>
           <div class="product-modal-content">
             <div class="product-modal-meta">
               <span class="product-modal-category" id="productModalCategory"></span>
-              <span class="product-modal-number" id="productModalNumber"></span>
+              <span class="material-tag" id="productModalMaterial"></span>
             </div>
             <h2 id="productModalTitle"></h2>
             <p class="product-modal-description" id="productModalDescription"></p>
             <div class="product-modal-specs" id="productModalSpecs" aria-label="Características do produto"></div>
             <div class="product-modal-action">
-              <span class="price-label">Orçamento</span>
+              <span class="price-label" id="productModalPrice">Orçamento</span>
               <a class="btn-primary product-modal-cta ripple-host" id="productModalCta" href="#" target="_blank" rel="noopener">
                 <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true">
                 Orçar no WhatsApp
@@ -1870,67 +767,33 @@
 
     <!-- Empty State -->
     <div class="no-results" id="noResults" role="status" aria-live="polite">
-      <h3>Nenhum item encontrado</h3>
-      <p>Tente buscar por outros termos ou fale conosco no WhatsApp!</p>
+      <h3>Nenhuma peça com esse termo</h3>
+      <p>Ajuste a busca — ou peça um modelo sob medida.</p>
     </div>
 
     <!-- Custom Idea Banner -->
     <div class="custom-banner reveal">
-      <h2>Não encontrou o que procura?</h2>
-      <p>Tem uma ideia diferente? Podemos criar ou adaptar um modelo 3D especialmente para o seu projeto.</p>
+      <h2>Tem uma peça na cabeça?</h2>
+      <p>Modelamos do zero: você descreve, a gente desenha, imprime e envia.</p>
       <a class="btn-primary ripple-host" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Tenho%20uma%20ideia%20de%20produto%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20personalizado." target="_blank" rel="noopener">
         Falar no WhatsApp
       </a>
     </div>
 
     <details class="image-credits" id="imageCredits">
-      <summary>Créditos das 44 imagens de referência</summary>
-      <p class="credits-note">As imagens são referências visuais licenciadas e não representam necessariamente peças produzidas pela 3D On.</p>
+      <summary>Como as 10 imagens foram feitas</summary>
+      <p class="credits-note">As imagens são ilustrações geradas localmente para representar os produtos do catálogo, sem caráter de foto real.</p>
       <ol class="credits-list">
-        <li><strong>Dock organizador de mesa</strong> — <a href="https://commons.wikimedia.org/wiki/File:Gather,_The_minimal,_modular_organizer._(Unsplash).jpg" target="_blank" rel="noopener">Jeff Sheldon / Ugmonk</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Suporte para celular</strong> — <a href="https://www.flickr.com/photos/102948369@N03/22946913243" target="_blank" rel="noopener">HackRVA</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a></li>
-        <li><strong>Organizador de mesa</strong> — <a href="https://www.flickr.com/photos/47257185@N03/30229628306" target="_blank" rel="noopener">ZERGE_VIOLATOR</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Porta-canetas moderno</strong> — <a href="https://www.flickr.com/photos/33907867@N02/7800825670" target="_blank" rel="noopener">Creative Tools</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Suporte para notebook</strong> — <a href="https://commons.wikimedia.org/wiki/File:Laptop_stand.jpg" target="_blank" rel="noopener">Solijon Solayev</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
-        <li><strong>Organizador de cabos</strong> — <a href="https://commons.wikimedia.org/wiki/File:Plastic_cable_clips.jpg" target="_blank" rel="noopener">Fumikas Sagisavas</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Organizador de brocas</strong> — <a href="https://commons.wikimedia.org/wiki/File:Drill_bits_2017_G1.jpg" target="_blank" rel="noopener">George Chernilevsky</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener">Domínio público (PD-self)</a></li>
-        <li><strong>Organizador de chaves</strong> — <a href="https://www.flickr.com/photos/31136597@N00/14788489564" target="_blank" rel="noopener">deejayqueue</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a></li>
-        <li><strong>Porta-parafusos</strong> — <a href="https://www.thingiverse.com/thing:3540087" target="_blank" rel="noopener">Jamison Ward</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Porta-bits</strong> — <a href="https://www.thingiverse.com/thing:624267" target="_blank" rel="noopener">UWM_DCRL</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Suporte para furadeira</strong> — <a href="https://www.thingiverse.com/thing:6047082" target="_blank" rel="noopener">AtomicPunk235</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></li>
-        <li><strong>Organizador de bancada</strong> — <a href="https://commons.wikimedia.org/wiki/File:WerkzeugwandLochbech.jpg" target="_blank" rel="noopener">Tetzemann</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Cabo personalizado para espetos</strong> — <a href="https://commons.wikimedia.org/wiki/File:Barbecue_skewers.jpg" target="_blank" rel="noopener">Fumikas Sagisavas</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Descanso para espetos</strong> — <a href="https://commons.wikimedia.org/wiki/File:Skewers_prepared_for_grilling.jpg" target="_blank" rel="noopener">Pavel Ševela</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
-        <li><strong>Porta-latas</strong> — <a href="https://commons.wikimedia.org/wiki/File:Koozie2010.JPG" target="_blank" rel="noopener">Tiina Santajoki</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
-        <li><strong>Porta-garrafas</strong> — <a href="https://commons.wikimedia.org/wiki/File:WineRack.JPG" target="_blank" rel="noopener">Simon Speed</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Abridor de garrafas personalizado</strong> — <a href="https://www.flickr.com/photos/25025297@N07/8148045118" target="_blank" rel="noopener">tahnok42</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Suporte para temperos</strong> — <a href="https://commons.wikimedia.org/wiki/File:Spices_container.jpg" target="_blank" rel="noopener">Ketandelhiwala</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
-        <li><strong>Organizador de console</strong> — <a href="https://www.thingiverse.com/thing:5392756" target="_blank" rel="noopener">Jvald80</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></li>
-        <li><strong>Suporte para celular automotivo</strong> — <a href="https://www.flickr.com/photos/142371194@N07/28309459372" target="_blank" rel="noopener">tonyr30</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Gancho para banco</strong> — <a href="https://www.pexels.com/photo/organized-car-seat-back-storage-with-various-bags-30563031/" target="_blank" rel="noopener">Andreas Näslund</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Porta-óculos</strong> — <a href="https://www.thingiverse.com/thing:981326" target="_blank" rel="noopener">Anenome / Michael Eliot</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Porta-moedas</strong> — <a href="https://www.thingiverse.com/thing:4411489" target="_blank" rel="noopener">kevtty</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></li>
-        <li><strong>Organizador de porta-malas</strong> — <a href="https://www.pexels.com/photo/a-bag-in-a-car-trunk-17000836/" target="_blank" rel="noopener">Vitali Adutskevich</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Descanso de copo</strong> — <a href="https://www.pexels.com/photo/drinking-glasses-on-coasters-4985522/" target="_blank" rel="noopener">Anna Tarazevich</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Organizador de cápsulas</strong> — <a href="https://www.pexels.com/photo/coffee-capsules-in-metal-rack-11882642/" target="_blank" rel="noopener">Carlos Zael</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Porta-canecas</strong> — <a href="https://www.pexels.com/photo/metal-mugs-hanging-on-a-chain-13687623/" target="_blank" rel="noopener">Alan Henrique</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Porta-filtro de café</strong> — <a href="https://www.pexels.com/photo/modern-coffee-brewing-setup-with-filter-holder-31694751/" target="_blank" rel="noopener">FOX ^.ᆽ.^= ∫</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Porta-garrafa</strong> — <a href="https://www.pexels.com/photo/whiskey-bottle-on-the-table-12301246/" target="_blank" rel="noopener">Engin Akyurt</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Dock para celular</strong> — <a href="https://www.pexels.com/photo/smartphone-on-a-desk-16003905/" target="_blank" rel="noopener">COPPERTIST WU</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Suporte para controle de videogame</strong> — <a href="https://www.flickr.com/photos/49048289@N00/32148622460" target="_blank" rel="noopener">Jaymis</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Suporte para fones</strong> — <a href="https://www.thingiverse.com/thing:2982580" target="_blank" rel="noopener">truithingy</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Organizador de carregadores</strong> — <a href="https://www.pexels.com/photo/basket-with-charger-smartphone-and-watch-10567239/" target="_blank" rel="noopener">Ron Lach</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Suporte para smartwatch</strong> — <a href="https://www.pexels.com/photo/modern-smartwatch-on-charging-stand-display-36659010/" target="_blank" rel="noopener">Joaquim Xadreque</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Chaveiro personalizado com nome</strong> — <a href="https://www.thingiverse.com/thing:5738934" target="_blank" rel="noopener">cissycurvy</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
-        <li><strong>Placa decorativa personalizada</strong> — <a href="https://www.pexels.com/photo/wooden-design-against-a-white-background-8128798/" target="_blank" rel="noopener">Julia Filirovska</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Porta-retrato personalizado</strong> — <a href="https://www.pexels.com/photo/an-empty-photo-frame-on-a-table-8102006/" target="_blank" rel="noopener">Polina</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Letreiro personalizado</strong> — <a href="https://www.pexels.com/photo/close-up-of-a-wooden-sign-saying-hello-8281388/" target="_blank" rel="noopener">Karen Laårk Boshoff</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Nome em 3D</strong> — <a href="https://www.thingiverse.com/thing:374631" target="_blank" rel="noopener">lagnaf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a></li>
-        <li><strong>Porta-cartões personalizado</strong> — <a href="https://www.pexels.com/photo/name-card-on-wooden-table-7319181/" target="_blank" rel="noopener">Angela Roma</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Vasos modernos</strong> — <a href="https://www.pexels.com/photo/geometrical-plant-pots-with-fake-flowers-inside-7223262/" target="_blank" rel="noopener">Alena Darmel</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Suporte para plantas</strong> — <a href="https://www.pexels.com/photo/elegant-indoor-plant-decor-with-metal-pot-30232150/" target="_blank" rel="noopener">Raymond Petrik</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
-        <li><strong>Etiquetas para horta</strong> — <a href="https://commons.wikimedia.org/wiki/File:170411_753_Encinitas_-_San_Diego_Botanic_Gdn,_Herb_Garden,_Verbascum_bombyciferum_Silver_Mullein,_Rosa_%27Baronne_Pr%C3%A9vost%27_label_and_petals_(33744407304).jpg" target="_blank" rel="noopener">cultivar413</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></li>
-        <li><strong>Regador compacto</strong> — <a href="https://www.pexels.com/photo/watering-can-and-potted-plants-outdoors-11299875/" target="_blank" rel="noopener">Marina Klässner</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></li>
+        <li><strong>Suporte Dobrável para Smartphone Print-in-Place</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Suporte Ergonômico de Mesa para Headsets</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Prendedor de Embalagens Print-in-Place (Kit com 5)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Dragão Articulado Flexível (Flexi Dragon)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Interruptor Háptico de Bolso (Fidget Toggle Switch)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Chaveiro Modular Bloco de Encaixe com Iniciais</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
+        <li><strong>Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
       </ol>
     </details>
   </main>
@@ -1961,7 +824,6 @@
     target="_blank" rel="noopener" aria-label="Orçamento via WhatsApp">
     <span class="badge-dot"></span>
     <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true">
-    Orçamento
   </a>
 
 </body>

@@ -1,840 +1,182 @@
 [
   {
-    "productId": "dock-organizador-mesa",
-    "product": "Dock organizador de mesa",
-    "localPath": "assets/catalogo/escritorio/dock-organizador-mesa.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gather,_The_minimal,_modular_organizer._(Unsplash).jpg",
-    "author": "Jeff Sheldon / Ugmonk",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "suporte-dobravel-smartphone-print-in-place",
+    "product": "Suporte Dobrável para Smartphone Print-in-Place",
+    "localPath": "assets/catalogo/gadgets-e-dispositivos/suporte-dobravel-smartphone-print-in-place.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "148a9c2cb3994735d90d0c22d476c89386510c3544181d07d2e977977914b2fb"
+    "sha256": "7269d6548b467c2f1880bf0c8d57f574d68d2590ad7826951741e3aef8f7e1ce"
   },
   {
-    "productId": "suporte-celular",
-    "product": "Suporte para celular",
-    "localPath": "assets/catalogo/escritorio/suporte-celular.webp",
-    "sourcePage": "https://www.flickr.com/photos/102948369@N03/22946913243",
-    "author": "HackRVA",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "suporte-ergonomico-headset",
+    "product": "Suporte Ergonômico de Mesa para Headsets",
+    "localPath": "assets/catalogo/gadgets-e-dispositivos/suporte-ergonomico-headset.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "24bc3768b18554de2d071e521bada7feefe035ae72efab01f648e9762944f08e"
+    "sha256": "0f3c7dff10b448c0a10cbcc404649b777df83f69f8bb2f1e7f46cb54c72e0b89"
   },
   {
-    "productId": "organizador-mesa",
-    "product": "Organizador de mesa",
-    "localPath": "assets/catalogo/escritorio/organizador-mesa.webp",
-    "sourcePage": "https://www.flickr.com/photos/47257185@N03/30229628306",
-    "author": "ZERGE_VIOLATOR",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "prendedor-embalagens-veda-sacos-kit",
+    "product": "Prendedor de Embalagens Print-in-Place (Kit com 5)",
+    "localPath": "assets/catalogo/utensilios-domesticos/prendedor-embalagens-veda-sacos-kit.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "603f071bfc99984b6cba92cc2b46c5b475daa858ee1cc9ef9d481395ae9162df"
+    "sha256": "a5f40eba254d0537cee99350e48ca9f3e0601da9e8140eeb24b948ed77e927e7"
   },
   {
-    "productId": "porta-canetas-moderno",
-    "product": "Porta-canetas moderno",
-    "localPath": "assets/catalogo/escritorio/porta-canetas-moderno.webp",
-    "sourcePage": "https://www.flickr.com/photos/33907867@N02/7800825670",
-    "author": "Creative Tools",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "indicador-magnetico-lava-loucas",
+    "product": "Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)",
+    "localPath": "assets/catalogo/utensilios-domesticos/indicador-magnetico-lava-loucas.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "401d40168c1b5908efd0714c9b291eb8dd27bbdc7edfe1d7c841786e26666fc2"
+    "sha256": "1905e34d67f7b48122cd3142ebbb66ff75f9b5c8bec852aae6ad4cf3a41e7b38"
   },
   {
-    "productId": "suporte-notebook",
-    "product": "Suporte para notebook",
-    "localPath": "assets/catalogo/escritorio/suporte-notebook.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Laptop_stand.jpg",
-    "author": "Solijon Solayev",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "clipes-gestao-cabos-mesa-kit",
+    "product": "Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)",
+    "localPath": "assets/catalogo/organizacao-de-escritorio/clipes-gestao-cabos-mesa-kit.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "4b92ca319d4a3ad4dfaadf864ea4702964e0d6073f275d453e8bca7027a14cc4"
+    "sha256": "bd27c819e0ddd3963148cbbadc642d4e3bebec45b747d51469fbddec2dfa9b87"
   },
   {
-    "productId": "organizador-cabos",
-    "product": "Organizador de cabos",
-    "localPath": "assets/catalogo/escritorio/organizador-cabos.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Plastic_cable_clips.jpg",
-    "author": "Fumikas Sagisavas",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "porta-canetas-geometrico-moai",
+    "product": "Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)",
+    "localPath": "assets/catalogo/organizacao-de-escritorio/porta-canetas-geometrico-moai.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "8f2920c02aaac635255104bf94df00c4f4ef3561cd431c415d69c32abfae47e8"
+    "sha256": "6549ca3f465070dfbbb2bb0c72fae17cdcf108dd8c460f7293fe74b3996ffd0a"
   },
   {
-    "productId": "organizador-brocas",
-    "product": "Organizador de brocas",
-    "localPath": "assets/catalogo/oficina/organizador-brocas.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Drill_bits_2017_G1.jpg",
-    "author": "George Chernilevsky",
-    "license": "Domínio público (PD-self)",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "dragao-articulado-flexivel",
+    "product": "Dragão Articulado Flexível (Flexi Dragon)",
+    "localPath": "assets/catalogo/articulados-e-fidgets/dragao-articulado-flexivel.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "7cc0de2ae24f21be9a936a9a5872295338a3c3067ec5a85735263f763677e7ac"
+    "sha256": "9735e5bc9f6fef16911fde519d69e992668b7f5f145a4243734313786736eeb8"
   },
   {
-    "productId": "organizador-chaves",
-    "product": "Organizador de chaves",
-    "localPath": "assets/catalogo/oficina/organizador-chaves.webp",
-    "sourcePage": "https://www.flickr.com/photos/31136597@N00/14788489564",
-    "author": "deejayqueue",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "interruptor-haptico-fidget-toggle",
+    "product": "Interruptor Háptico de Bolso (Fidget Toggle Switch)",
+    "localPath": "assets/catalogo/articulados-e-fidgets/interruptor-haptico-fidget-toggle.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "fe8b6d9724f63e115a64e04177b6b4a9c20e3c9065dba9582d6eed13af694104"
+    "sha256": "64eb1b38864d77b5493ea009491b6755afb86fbc7b6b9392453a05766a43c26a"
   },
   {
-    "productId": "porta-parafusos",
-    "product": "Porta-parafusos",
-    "localPath": "assets/catalogo/oficina/porta-parafusos.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:3540087",
-    "author": "Jamison Ward",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "chaveiro-bloco-de-encaixe-inicial",
+    "product": "Chaveiro Modular Bloco de Encaixe com Iniciais",
+    "localPath": "assets/catalogo/acessorios-pessoais-e-chaveiros/chaveiro-bloco-de-encaixe-inicial.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "6d4f991d2bac7bcc3d1749ea624738f62c30638a909502c5cd232d72134d98da"
+    "sha256": "cfa694a64d1957d6dd169ae5748b2483d324610e03301bb002d4cd3f4f2c8b31"
   },
   {
-    "productId": "porta-bits",
-    "product": "Porta-bits",
-    "localPath": "assets/catalogo/oficina/porta-bits.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:624267",
-    "author": "UWM_DCRL",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
+    "productId": "chaveiro-miniatura-colecionavel",
+    "product": "Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)",
+    "localPath": "assets/catalogo/acessorios-pessoais-e-chaveiros/chaveiro-miniatura-colecionavel.webp",
+    "sourcePage": "imagegen-local",
+    "author": "3D On / Codex",
+    "license": "Imagem ilustrativa gerada localmente",
+    "licenseUrl": "",
+    "accessedAt": "2026-08-12",
     "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
+      "imagem ilustrativa gerada com imagegen",
+      "convertida para WebP",
+      "redimensionada para 960x720"
     ],
     "width": 960,
     "height": 720,
-    "sha256": "b6af4e377ea9a7bb0575bf0f1eac0f8a2627f8af4e7306ed6b2085d7a685dbc6"
-  },
-  {
-    "productId": "suporte-furadeira",
-    "product": "Suporte para furadeira",
-    "localPath": "assets/catalogo/oficina/suporte-furadeira.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:6047082",
-    "author": "AtomicPunk235",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "df3479003503c59588790abcfb68838ba0f9cb35c00b3559b718562437a4970f"
-  },
-  {
-    "productId": "organizador-bancada",
-    "product": "Organizador de bancada",
-    "localPath": "assets/catalogo/oficina/organizador-bancada.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:WerkzeugwandLochbech.jpg",
-    "author": "Tetzemann",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "fe84b689969b99bb16b45cd697a3928bc7c833891f8844fbd77dcb8ee2eeb254"
-  },
-  {
-    "productId": "cabo-personalizado-espetos",
-    "product": "Cabo personalizado para espetos",
-    "localPath": "assets/catalogo/churrasco/cabo-personalizado-espetos.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Barbecue_skewers.jpg",
-    "author": "Fumikas Sagisavas",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "06c5b61358c9f38fc6fa6f246bd9e743faa4e11385dcd901fd4e88ea26e360d7"
-  },
-  {
-    "productId": "descanso-espetos",
-    "product": "Descanso para espetos",
-    "localPath": "assets/catalogo/churrasco/descanso-espetos.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Skewers_prepared_for_grilling.jpg",
-    "author": "Pavel Ševela",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "0b0ad7de1bd8aac8bd3d6102d92d7daa249c3b382c4b64e5c3d9617853080f39"
-  },
-  {
-    "productId": "porta-latas",
-    "product": "Porta-latas",
-    "localPath": "assets/catalogo/churrasco/porta-latas.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Koozie2010.JPG",
-    "author": "Tiina Santajoki",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "recorte para isolar o porta-latas e remover texto da lata",
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "340c2bfc134ca1e27bf6faa171d81782fdc0a0335de310a9d56ba45cf3886552"
-  },
-  {
-    "productId": "porta-garrafas",
-    "product": "Porta-garrafas",
-    "localPath": "assets/catalogo/churrasco/porta-garrafas.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:WineRack.JPG",
-    "author": "Simon Speed",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "c5556b82e506c709a5f951e707fd8cd0ed4c64720225bcf26645581815ed477c"
-  },
-  {
-    "productId": "abridor-garrafas-personalizado",
-    "product": "Abridor de garrafas personalizado",
-    "localPath": "assets/catalogo/churrasco/abridor-garrafas-personalizado.webp",
-    "sourcePage": "https://www.flickr.com/photos/25025297@N07/8148045118",
-    "author": "tahnok42",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "c6af79a9f69767e71fe338911978b7ff210c5c883f1958472f25682e0c62ace7"
-  },
-  {
-    "productId": "suporte-temperos",
-    "product": "Suporte para temperos",
-    "localPath": "assets/catalogo/churrasco/suporte-temperos.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Spices_container.jpg",
-    "author": "Ketandelhiwala",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "5a2dba1015e8533c70238d9132799d51754f74c5be30a9cae4511ba87457dfeb"
-  },
-  {
-    "productId": "organizador-console",
-    "product": "Organizador de console",
-    "localPath": "assets/catalogo/carro/organizador-console.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:5392756",
-    "author": "Jvald80",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "63a9c19fe44307050d48fb2df780ff7cb1a8334a77945ad1fede95c5c22aa3b8"
-  },
-  {
-    "productId": "suporte-celular-automotivo",
-    "product": "Suporte para celular automotivo",
-    "localPath": "assets/catalogo/carro/suporte-celular-automotivo.webp",
-    "sourcePage": "https://www.flickr.com/photos/142371194@N07/28309459372",
-    "author": "tonyr30",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "ea19f8469dd64f6c33674bd33581044e18f5d2264c177af0db1d1a3c57796501"
-  },
-  {
-    "productId": "gancho-banco",
-    "product": "Gancho para banco",
-    "localPath": "assets/catalogo/carro/gancho-banco.webp",
-    "sourcePage": "https://www.pexels.com/photo/organized-car-seat-back-storage-with-various-bags-30563031/",
-    "author": "Andreas Näslund",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "recorte superior 4:3 para enfatizar a fixação nas hastes do apoio de cabeça e o organizador suspenso",
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "d772450ef02e8de707550fac09894081b8465be947684bc93a519ccb1e632acc"
-  },
-  {
-    "productId": "porta-oculos",
-    "product": "Porta-óculos",
-    "localPath": "assets/catalogo/carro/porta-oculos.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:981326",
-    "author": "Anenome / Michael Eliot",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "313c626654643d51a70469664c6753ae889ec506bc37c69342425caa0c0c57d5"
-  },
-  {
-    "productId": "porta-moedas",
-    "product": "Porta-moedas",
-    "localPath": "assets/catalogo/carro/porta-moedas.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:4411489",
-    "author": "kevtty",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "96bd20f699473d32fe0ffabf4a82171777f6e8b524ef8a958744231519937b19"
-  },
-  {
-    "productId": "organizador-porta-malas",
-    "product": "Organizador de porta-malas",
-    "localPath": "assets/catalogo/carro/organizador-porta-malas.webp",
-    "sourcePage": "https://www.pexels.com/photo/a-bag-in-a-car-trunk-17000836/",
-    "author": "Vitali Adutskevich",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "1d5d72aa0884f6eb11779484e584191cf78adb759cf4c12618991d9d03267356"
-  },
-  {
-    "productId": "descanso-copo",
-    "product": "Descanso de copo",
-    "localPath": "assets/catalogo/cafe/descanso-copo.webp",
-    "sourcePage": "https://www.pexels.com/photo/drinking-glasses-on-coasters-4985522/",
-    "author": "Anna Tarazevich",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "545f9e96ad9b24f94fbfea2d499cad5e24e98bacf94df70444ef6af4f222aca2"
-  },
-  {
-    "productId": "organizador-capsulas",
-    "product": "Organizador de cápsulas",
-    "localPath": "assets/catalogo/cafe/organizador-capsulas.webp",
-    "sourcePage": "https://www.pexels.com/photo/coffee-capsules-in-metal-rack-11882642/",
-    "author": "Carlos Zael",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "5247c101532df2577f0cc7364e342f18368fd266a7d9b7ff53010f9da737cfb1"
-  },
-  {
-    "productId": "porta-canecas",
-    "product": "Porta-canecas",
-    "localPath": "assets/catalogo/cafe/porta-canecas.webp",
-    "sourcePage": "https://www.pexels.com/photo/metal-mugs-hanging-on-a-chain-13687623/",
-    "author": "Alan Henrique",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "8093d05becea5c72a3e9c1fc67831e5711b94363b81a96e720402bf6d8fcb5da"
-  },
-  {
-    "productId": "porta-filtro-cafe",
-    "product": "Porta-filtro de café",
-    "localPath": "assets/catalogo/cafe/porta-filtro-cafe.webp",
-    "sourcePage": "https://www.pexels.com/photo/modern-coffee-brewing-setup-with-filter-holder-31694751/",
-    "author": "FOX ^.ᆽ.^= ∫",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "6f1c1f22b48a87f331406d9fc229acd831cc5d7af81fee723d1236922968ee26"
-  },
-  {
-    "productId": "porta-garrafa",
-    "product": "Porta-garrafa",
-    "localPath": "assets/catalogo/cafe/porta-garrafa.webp",
-    "sourcePage": "https://www.pexels.com/photo/whiskey-bottle-on-the-table-12301246/",
-    "author": "Engin Akyurt",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "53de17e685764e136e221a3679a6577ebfdfd31f4acc2edf0cd77b8f83f90aa3"
-  },
-  {
-    "productId": "dock-celular",
-    "product": "Dock para celular",
-    "localPath": "assets/catalogo/geek/dock-celular.webp",
-    "sourcePage": "https://www.pexels.com/photo/smartphone-on-a-desk-16003905/",
-    "author": "COPPERTIST WU",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "e0092f10e6a8925da6aeaa13833dca48f78caf2881c5c3a59b9940a098577863"
-  },
-  {
-    "productId": "suporte-controle-videogame",
-    "product": "Suporte para controle de videogame",
-    "localPath": "assets/catalogo/geek/suporte-controle-videogame.webp",
-    "sourcePage": "https://www.flickr.com/photos/49048289@N00/32148622460",
-    "author": "Jaymis",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "cecec53171bbcc36ff0566bd22f56e91cea0690ab3f0534dc533d093223669a3"
-  },
-  {
-    "productId": "suporte-fones",
-    "product": "Suporte para fones",
-    "localPath": "assets/catalogo/geek/suporte-fones.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:2982580",
-    "author": "truithingy",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "9564e998994c70567e6094e86c19007d9701c817001889f8e640bb040e590b64"
-  },
-  {
-    "productId": "organizador-carregadores",
-    "product": "Organizador de carregadores",
-    "localPath": "assets/catalogo/geek/organizador-carregadores.webp",
-    "sourcePage": "https://www.pexels.com/photo/basket-with-charger-smartphone-and-watch-10567239/",
-    "author": "Ron Lach",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "7fc3652cb6d6657da77cb6792f545c773f4694c42951ac04dea69db0ef77ed8d"
-  },
-  {
-    "productId": "suporte-smartwatch",
-    "product": "Suporte para smartwatch",
-    "localPath": "assets/catalogo/geek/suporte-smartwatch.webp",
-    "sourcePage": "https://www.pexels.com/photo/modern-smartwatch-on-charging-stand-display-36659010/",
-    "author": "Joaquim Xadreque",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "915743a1a410748ffd9bb68e21b67f09f3928a00342f223abf357b7fa6bd37ae"
-  },
-  {
-    "productId": "chaveiro-personalizado-nome",
-    "product": "Chaveiro personalizado com nome",
-    "localPath": "assets/catalogo/personalizados/chaveiro-personalizado-nome.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:5738934",
-    "author": "cissycurvy",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "221d8aec86ace483692d77cacbc5f161c8ac33dd857ccdd61eba351aeb742dac"
-  },
-  {
-    "productId": "placa-decorativa-personalizada",
-    "product": "Placa decorativa personalizada",
-    "localPath": "assets/catalogo/personalizados/placa-decorativa-personalizada.webp",
-    "sourcePage": "https://www.pexels.com/photo/wooden-design-against-a-white-background-8128798/",
-    "author": "Julia Filirovska",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "a968b306a10c06ae21c8f352ba85a4939a92c1452547bed672b945972190b40c"
-  },
-  {
-    "productId": "porta-retrato-personalizado",
-    "product": "Porta-retrato personalizado",
-    "localPath": "assets/catalogo/personalizados/porta-retrato-personalizado.webp",
-    "sourcePage": "https://www.pexels.com/photo/an-empty-photo-frame-on-a-table-8102006/",
-    "author": "Polina",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "fd87f9bd435d780ac2bdcc88eddd4bc14fb09c3c0f55aa98d2fd1197b8119080"
-  },
-  {
-    "productId": "letreiro-personalizado",
-    "product": "Letreiro personalizado",
-    "localPath": "assets/catalogo/personalizados/letreiro-personalizado.webp",
-    "sourcePage": "https://www.pexels.com/photo/close-up-of-a-wooden-sign-saying-hello-8281388/",
-    "author": "Karen Laårk Boshoff",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "453cf6021916a0be442c47c54c8432e776ed7248ccc59cb0ec516f7823e330d9"
-  },
-  {
-    "productId": "nome-em-3d",
-    "product": "Nome em 3D",
-    "localPath": "assets/catalogo/personalizados/nome-em-3d.webp",
-    "sourcePage": "https://www.thingiverse.com/thing:374631",
-    "author": "lagnaf",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "39838960c1c5a555d82052a3d2927556d83c3baae716e241c02014ea77128fc9"
-  },
-  {
-    "productId": "porta-cartoes-personalizado",
-    "product": "Porta-cartões personalizado",
-    "localPath": "assets/catalogo/personalizados/porta-cartoes-personalizado.webp",
-    "sourcePage": "https://www.pexels.com/photo/name-card-on-wooden-table-7319181/",
-    "author": "Angela Roma",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "bdc936bbbc54516ceec1e88f3bdb3b9e4e7200549aeb8343450ba115f4733859"
-  },
-  {
-    "productId": "vasos-modernos",
-    "product": "Vasos modernos",
-    "localPath": "assets/catalogo/jardinagem/vasos-modernos.webp",
-    "sourcePage": "https://www.pexels.com/photo/geometrical-plant-pots-with-fake-flowers-inside-7223262/",
-    "author": "Alena Darmel",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "38d6f93ac833afcaac3c65d32e999310d114bdf0e0567d15d8fb528b9381b69d"
-  },
-  {
-    "productId": "suporte-plantas",
-    "product": "Suporte para plantas",
-    "localPath": "assets/catalogo/jardinagem/suporte-plantas.webp",
-    "sourcePage": "https://www.pexels.com/photo/elegant-indoor-plant-decor-with-metal-pot-30232150/",
-    "author": "Raymond Petrik",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "2b87d477d90ea2554f11ba813f07dbfc85eb134ad7e974358c4a94bd94b44071"
-  },
-  {
-    "productId": "etiquetas-horta",
-    "product": "Etiquetas para horta",
-    "localPath": "assets/catalogo/jardinagem/etiquetas-horta.webp",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:170411_753_Encinitas_-_San_Diego_Botanic_Gdn,_Herb_Garden,_Verbascum_bombyciferum_Silver_Mullein,_Rosa_%27Baronne_Pr%C3%A9vost%27_label_and_petals_(33744407304).jpg",
-    "author": "cultivar413",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "898b4473330b237bb11177858af42d0323934a9f18ec345d183c1780b07024fc"
-  },
-  {
-    "productId": "regador-compacto",
-    "product": "Regador compacto",
-    "localPath": "assets/catalogo/jardinagem/regador-compacto.webp",
-    "sourcePage": "https://www.pexels.com/photo/watering-can-and-potted-plants-outdoors-11299875/",
-    "author": "Marina Klässner",
-    "license": "Pexels License",
-    "licenseUrl": "https://www.pexels.com/license/",
-    "accessedAt": "2026-08-08",
-    "changes": [
-      "redimensionamento proporcional",
-      "padding 4:3 em fundo escuro",
-      "conversão WebP",
-      "remoção de metadados"
-    ],
-    "width": 960,
-    "height": 720,
-    "sha256": "69c493e8e863dd3328deea048d3cd7c7deb1e8c0402c71abeb4f40746d5aae49"
+    "sha256": "8b5e7d8f8454547260c3b2b6f83fcac85eca6a4a00384495e346fbc2c510a32f"
   }
 ]

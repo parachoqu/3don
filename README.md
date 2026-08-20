@@ -56,3 +56,13 @@ Após 3 anos de pesquisa e desenvolvimento independente, meu foco é escalar o i
 
 ---
 *Este repositório serve como um hub de documentação para meus projetos em fase de transição para Open Source.*
+
+## Cache busting do site 3D On
+
+Antes de um deploy manual, execute:
+
+```bash
+node scripts/cache-bust.js
+```
+
+O script calcula um hash SHA-256 curto do `style.css` e do `script.js` e atualiza as referências locais nos arquivos HTML (`?v=hash`). Ele é executado automaticamente pela Vercel através do `buildCommand` definido em `vercel.json`. O versionamento por conteúdo mantém o cache dos arquivos imutáveis e faz o navegador baixar uma nova versão somente quando o arquivo muda.

@@ -1,8 +1,5 @@
-// Home interactions moved from index.html
+// Home interactions
 document.addEventListener('DOMContentLoaded', () => {
-
-      // Touch detection
-      const isTouch = matchMedia('(hover: none) and (pointer: coarse)').matches;
 
       // Scroll Progress Bar
       const scrollFill = document.getElementById('scrollFill');
@@ -12,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollFill.style.width = pct + '%';
       }
 
-      // Intersection Observer for scroll reveal, with a visible fallback
+      // Intersection Observer for scroll reveal
       const reveals = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add('active');
           });
-        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
         reveals.forEach(el => observer.observe(el));
       } else {
         reveals.forEach(el => el.classList.add('active'));
@@ -52,133 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('touchcancel', () => btn.classList.remove('touch-press'), { passive: true });
       });
 
-      // Card Touch & Tilt Interactions
-      const cards = document.querySelectorAll('.cat-card');
-      cards.forEach(card => {
-        const updateGlow = (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = (e.clientX || (e.touches && e.touches[0].clientX)) - rect.left;
-          const y = (e.clientY || (e.touches && e.touches[0].clientY)) - rect.top;
-          card.style.setProperty('--mouse-x', `${x}px`);
-          card.style.setProperty('--mouse-y', `${y}px`);
-        };
-
-        card.addEventListener('mousemove', updateGlow);
-
-        if (isTouch) {
-          card.addEventListener('touchstart', (e) => {
-            card.classList.add('tilting', 'glow-active');
-            updateGlow(e);
-          }, { passive: true });
-
-          card.addEventListener('touchmove', (e) => {
-            const t = e.touches[0];
-            const rect = card.getBoundingClientRect();
-            const cx = rect.left + rect.width / 2;
-            const cy = rect.top + rect.height / 2;
-            const dx = (t.clientX - cx) / (rect.width / 2);
-            const dy = (t.clientY - cy) / (rect.height / 2);
-            const tiltX = dy * -6;
-            const tiltY = dx * 6;
-            card.style.transform = `perspective(400px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.02)`;
-            card.style.borderColor = 'rgba(255, 106, 0, 0.45)';
-            card.style.boxShadow = '0 14px 32px -8px rgba(0,0,0,0.7), 0 0 24px rgba(255,106,0,0.2)';
-            updateGlow(e);
-          }, { passive: true });
-
-          card.addEventListener('touchend', () => {
-            card.classList.remove('tilting', 'glow-active');
-            card.style.transform = '';
-            card.style.borderColor = '';
-            card.style.boxShadow = '';
-          }, { passive: true });
-
-          card.addEventListener('touchcancel', () => {
-            card.classList.remove('tilting', 'glow-active');
-            card.style.transform = '';
-            card.style.borderColor = '';
-            card.style.boxShadow = '';
-          }, { passive: true });
-        }
-      });
-
-      // Mobile category card details (only one card open at a time)
-      const cardMobileLayout = matchMedia('(max-width: 600px)');
-      const cardDetailButtons = document.querySelectorAll('.card-details-toggle');
-
-      function setHomeCardExpanded(card, expanded) {
-        const button = card.querySelector('.card-details-toggle');
-        if (!button) return;
-        card.classList.toggle('is-expanded', expanded);
-        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-        button.querySelector('span').textContent = expanded ? 'Ocultar detalhes' : 'Ver detalhes';
-      }
-
-      function closeHomeCardDetails(exceptCard = null) {
-        cards.forEach(card => {
-          if (card !== exceptCard) setHomeCardExpanded(card, false);
-        });
-      }
-
-      cardDetailButtons.forEach(button => {
-        button.addEventListener('click', (event) => {
-          event.stopPropagation();
-          if (!cardMobileLayout.matches) return;
-          const card = button.closest('.cat-card');
-          const shouldExpand = !card.classList.contains('is-expanded');
-          closeHomeCardDetails(card);
-          setHomeCardExpanded(card, shouldExpand);
-        });
-      });
-
-      cardMobileLayout.addEventListener('change', () => closeHomeCardDetails());
-
-      // Catalog Swipe Dots
-      const catalogEl = document.getElementById('catalogScroll');
-      const dots = document.querySelectorAll('#scrollDots .dot-item');
-      if (catalogEl) {
-        const catalogCards = [...catalogEl.querySelectorAll('.cat-card')];
-        let catalogFrame = null;
-
-        const updateCatalogHighlight = () => {
-          catalogFrame = null;
-          if (!catalogCards.length) return;
-
-          const catalogRect = catalogEl.getBoundingClientRect();
-          const catalogCenter = catalogRect.left + catalogRect.width / 2;
-          let activeIndex = 0;
-          let closestDistance = Infinity;
-
-          catalogCards.forEach((card, index) => {
-            const cardRect = card.getBoundingClientRect();
-            const cardCenter = cardRect.left + cardRect.width / 2;
-            const distance = Math.abs(cardCenter - catalogCenter);
-            if (distance < closestDistance) {
-              closestDistance = distance;
-              activeIndex = index;
-            }
-          });
-
-          catalogEl.classList.add('has-featured-card');
-          catalogCards.forEach((card, index) => {
-            card.classList.toggle('is-featured', index === activeIndex);
-          });
-          dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === activeIndex);
-            dot.setAttribute('aria-current', index === activeIndex ? 'true' : 'false');
-          });
-        };
-
-        const requestCatalogHighlight = () => {
-          if (catalogFrame !== null) return;
-          catalogFrame = requestAnimationFrame(updateCatalogHighlight);
-        };
-
-        catalogEl.addEventListener('scroll', requestCatalogHighlight, { passive: true });
-        window.addEventListener('resize', requestCatalogHighlight);
-        requestCatalogHighlight();
-      }
-
       // Floating WhatsApp Visibility & Footer avoid
       const floatingWsp = document.getElementById('floatingWsp');
       const footerEl = document.querySelector('footer');
@@ -191,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sy = window.scrollY;
         const footerTop = footerEl.getBoundingClientRect().top;
         const nearPageEnd = sy + window.innerHeight >= document.documentElement.scrollHeight - 120;
-        if (sy > 280) {
+        if (sy > 220) {
           floatingWsp.classList.add('show');
         } else {
           floatingWsp.classList.remove('show');
@@ -207,49 +77,189 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('scroll', updateFloating, { passive: true });
       updateFloating();
 
-      // Material Selector Logic
-      const matDesc = document.getElementById('matDesc');
-      const materialPills = document.querySelectorAll('.mat-pill');
-      const selectMaterial = (pill) => {
-          materialPills.forEach(p => {
-            p.classList.remove('active');
-            p.setAttribute('aria-pressed', 'false');
-          });
-          pill.classList.add('active');
-          pill.setAttribute('aria-pressed', 'true');
-          matDesc.classList.add('fading');
-          setTimeout(() => {
-            matDesc.textContent = pill.dataset.desc;
-            matDesc.classList.remove('fading');
-          }, 180);
-      };
-
-      materialPills.forEach(pill => {
-        pill.addEventListener('click', () => selectMaterial(pill));
-        pill.addEventListener('keydown', (event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            selectMaterial(pill);
-          }
-        });
-      });
-
-      // FAQ Accordion Logic
-      document.querySelectorAll('.faq-question').forEach(btn => {
+      // FAQ Editorial Accordion Logic
+      document.querySelectorAll('.faq-editorial-question').forEach(btn => {
         btn.addEventListener('click', () => {
-          const item = btn.parentElement;
+          const item = btn.closest('.faq-editorial-item');
           const isOpen = item.classList.contains('open');
-          document.querySelectorAll('.faq-item').forEach(i => {
+          document.querySelectorAll('.faq-editorial-item').forEach(i => {
             i.classList.remove('open');
-            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            const q = i.querySelector('.faq-editorial-question');
+            if (q) q.setAttribute('aria-expanded', 'false');
+            const icon = i.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
           });
           if (!isOpen) {
             item.classList.add('open');
             btn.setAttribute('aria-expanded', 'true');
+            const icon = btn.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
           }
         });
       });
+      // Automatic Horizontal Carousel for Hero Delivered Projects (Clean Loop)
+      function initHeroCarousel() {
+        const carousel = document.getElementById('heroVisualCarousel');
+        const track = document.getElementById('heroCarouselTrack');
+        const badgeTitle = document.getElementById('heroCarouselBadgeTitle');
+        const badgeNum = document.getElementById('heroCarouselBadgeNum');
 
+        if (!carousel || !track) return;
+
+        const slides = track.querySelectorAll('.hero-carousel-slide');
+        const totalSlides = slides.length;
+        if (totalSlides === 0) return;
+
+        let currentIndex = 0;
+        let timer = null;
+        const intervalTime = 3500; // 3.5s loop
+
+        function goToSlide(index) {
+          if (index < 0) {
+            currentIndex = totalSlides - 1;
+          } else if (index >= totalSlides) {
+            currentIndex = 0;
+          } else {
+            currentIndex = index;
+          }
+
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentIndex);
+          });
+
+          if (badgeTitle && slides[currentIndex]) {
+            const title = slides[currentIndex].getAttribute('data-title') || '';
+            const numStr = String(currentIndex + 1).padStart(2, '0');
+            badgeTitle.style.opacity = '0';
+            if (badgeNum) badgeNum.style.opacity = '0';
+            setTimeout(() => {
+              if (badgeNum) {
+                badgeNum.textContent = numStr;
+                badgeNum.style.opacity = '1';
+              }
+              badgeTitle.textContent = title;
+              badgeTitle.style.opacity = '1';
+            }, 160);
+          }
+        }
+
+        function startAutoplay() {
+          stopAutoplay();
+          timer = setInterval(() => {
+            goToSlide(currentIndex + 1);
+          }, intervalTime);
+        }
+
+        function stopAutoplay() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+        carousel.addEventListener('touchstart', stopAutoplay, { passive: true });
+        carousel.addEventListener('touchend', startAutoplay, { passive: true });
+
+        // Touch Swipe
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+          if (e.touches && e.touches.length > 0) {
+            touchStartX = e.touches[0].clientX;
+          }
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', (e) => {
+          if (e.changedTouches && e.changedTouches.length > 0) {
+            touchEndX = e.changedTouches[0].clientX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 35) {
+              if (diff > 0) {
+                goToSlide(currentIndex + 1);
+              } else {
+                goToSlide(currentIndex - 1);
+              }
+              startAutoplay();
+            }
+          }
+        }, { passive: true });
+
+        goToSlide(0);
+        startAutoplay();
+      }
+
+      initHeroCarousel();
+
+      // Carrossel horizontal de destaques (mobile): indicadores + sincronia com o scroll
+      function initHighlightsCarousel() {
+        const track = document.getElementById('highlightsCarousel');
+        const dotsWrap = document.getElementById('highlightsDots');
+        if (!track || !dotsWrap) return;
+
+        const cards = Array.from(track.querySelectorAll('.highlight-card'));
+        if (cards.length < 2) return;
+
+        const prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const centerOf = (el) => {
+          const rect = el.getBoundingClientRect();
+          return rect.left + rect.width / 2;
+        };
+
+        const dots = cards.map((card, i) => {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'highlights-dot';
+          dot.setAttribute('aria-label', `Ir para o destaque ${i + 1} de ${cards.length}`);
+          dot.addEventListener('click', () => {
+            track.scrollBy({
+              left: centerOf(card) - centerOf(track),
+              behavior: prefersReducedMotion ? 'auto' : 'smooth'
+            });
+          });
+          dotsWrap.appendChild(dot);
+          return dot;
+        });
+
+        function syncActiveDot() {
+          const trackCenter = centerOf(track);
+          let activeIndex = 0;
+          let shortest = Infinity;
+          cards.forEach((card, i) => {
+            const distance = Math.abs(centerOf(card) - trackCenter);
+            if (distance < shortest) {
+              shortest = distance;
+              activeIndex = i;
+            }
+          });
+          dots.forEach((dot, i) => {
+            const isActive = i === activeIndex;
+            dot.classList.toggle('active', isActive);
+            dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+          });
+        }
+
+        let ticking = false;
+        function requestSync() {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            ticking = false;
+            syncActiveDot();
+          });
+        }
+
+        track.addEventListener('scroll', requestSync, { passive: true });
+        window.addEventListener('resize', requestSync, { passive: true });
+        syncActiveDot();
+      }
+
+      initHighlightsCarousel();
     });
 
 // Catalog interactions moved from the catalog page
@@ -307,7 +317,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const cards = document.querySelectorAll('.cat-card-full');
       const noResults = document.getElementById('noResults');
       const resultsCount = document.getElementById('resultsCount');
-      const categoryContext = document.getElementById('categoryContext');
       const filterPillsMobileLayout = matchMedia('(max-width: 600px)');
       const productModal = document.getElementById('productModal');
       const productModalShell = productModal.querySelector('.product-modal-shell');
@@ -315,10 +324,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const productModalImage = document.getElementById('productModalImage');
       const productModalCaption = document.getElementById('productModalCaption');
       const productModalCategory = document.getElementById('productModalCategory');
-      const productModalNumber = document.getElementById('productModalNumber');
       const productModalTitle = document.getElementById('productModalTitle');
       const productModalDescription = document.getElementById('productModalDescription');
       const productModalSpecs = document.getElementById('productModalSpecs');
+      const productModalMaterial = document.getElementById('productModalMaterial');
+      const productModalPrice = document.getElementById('productModalPrice');
       const productModalCta = document.getElementById('productModalCta');
       let lastModalTrigger = null;
 
@@ -332,9 +342,21 @@ document.addEventListener('DOMContentLoaded', () => {
         productModalImage.alt = cardImage.alt;
         productModalCaption.textContent = cardCaption?.textContent || 'Referência visual';
         productModalCategory.textContent = card.querySelector('.category-badge')?.textContent || '';
-        productModalNumber.textContent = card.querySelector('.layer-tag')?.textContent || '';
-        productModalTitle.textContent = card.querySelector('h3')?.textContent || card.dataset.product;
+        productModalMaterial.textContent = card.querySelector('.material-tag')?.textContent || '';
+        // O card mostra o nome curto; o modal é onde o nome completo cabe. Ler o h3
+        // aqui encurtaria o título do modal junto com o do card.
+        productModalTitle.textContent = card.dataset.title || card.dataset.product;
         productModalDescription.textContent = cardDescription?.textContent || '';
+        // O preço tem estrutura ("R$" em .currency + numeral), então clona os nós
+        // em vez de copiar o texto — textContent perderia o tratamento tipográfico.
+        const cardPrice = card.querySelector('.price-label');
+        if (cardPrice) {
+          productModalPrice.replaceChildren(
+            ...[...cardPrice.childNodes].map(node => node.cloneNode(true))
+          );
+        } else {
+          productModalPrice.textContent = 'Orçamento';
+        }
         productModalCta.href = card.dataset.ctaHref;
         productModalCta.setAttribute(
           'aria-label',
@@ -376,19 +398,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       cards.forEach(card => {
-        const cardButton = card.querySelector('.product-card-toggle');
+        const cardButton = card.querySelector('.card-open');
         const cardCta = card.querySelector('.card-act-btn');
 
+        // O CTA permanece no card; o modal reaproveita destino e rótulo dele.
         if (cardCta) {
           card.dataset.ctaHref = cardCta.getAttribute('href');
           card.dataset.ctaLabel = cardCta.getAttribute('aria-label') || '';
-          cardCta.remove();
         }
 
-        cardButton.removeAttribute('aria-expanded');
         cardButton.setAttribute('aria-controls', 'productModal');
         cardButton.setAttribute('aria-haspopup', 'dialog');
-        cardButton.setAttribute('aria-label', `Ver detalhes de ${card.dataset.product}`);
 
         cardButton.addEventListener('click', (event) => {
           event.stopPropagation();
@@ -411,37 +431,25 @@ document.addEventListener('DOMContentLoaded', () => {
       let searchQuery = '';
 
       const categoryInfo = {
-        escritorio: {
-          label: 'Escritório & Home Office',
-          description: 'Soluções funcionais para quem trabalha, estuda ou passa boa parte do dia no computador.'
+        'gadgets-e-dispositivos': {
+          label: 'Acessórios para Dispositivos Móveis e Gadgets',
+          description: 'Suportes e acessórios para smartphones, áudio, setups e pequenos gadgets do dia a dia.'
         },
-        oficina: {
-          label: 'Oficina & Ferramentas',
-          description: 'Organização para oficina, bancada e ferramentas do dia a dia.'
+        'utensilios-domesticos': {
+          label: 'Utensílios Domésticos e Utilidades',
+          description: 'Utilidades funcionais para cozinha, organização doméstica e pequenas rotinas da casa.'
         },
-        churrasco: {
-          label: 'Churrasco',
-          description: 'Acessórios práticos para deixar o preparo e o momento do churrasco mais organizados.'
+        'organizacao-de-escritorio': {
+          label: 'Organização de Escritório',
+          description: 'Organizadores de mesa e acessórios para manter cabos, canetas e setups em ordem.'
         },
-        carro: {
-          label: 'Carro',
-          description: 'Peças funcionais para deixar o carro mais organizado e prático.'
+        'articulados-e-fidgets': {
+          label: 'Dispositivos Articulados e Fidgets',
+          description: 'Peças articuladas, sensoriais e colecionáveis com movimento e resposta tátil.'
         },
-        cafe: {
-          label: 'Café & Bebidas',
-          description: 'Acessórios que tornam o preparo e o momento das bebidas mais organizados e agradáveis.'
-        },
-        geek: {
-          label: 'Geek & Tecnologia',
-          description: 'Acessórios para quem gosta de tecnologia, games e gadgets.'
-        },
-        personalizados: {
-          label: 'Personalizados',
-          description: 'Produtos que podem receber nome, mensagem ou uma identidade própria.'
-        },
-        jardinagem: {
-          label: 'Jardinagem',
-          description: 'Soluções para quem gosta de plantas, jardim, horta e cultivo em casa.'
+        'acessorios-pessoais-e-chaveiros': {
+          label: 'Acessórios Pessoais e Chaveiros',
+          description: 'Chaveiros personalizados, miniaturas leves e acessórios de uso pessoal.'
         }
       };
 
@@ -451,23 +459,6 @@ document.addEventListener('DOMContentLoaded', () => {
           .replace(/[\u0300-\u036f]/g, '')
           .toLowerCase()
           .trim();
-      }
-
-      function updateCategoryContext(visibleCount) {
-        const title = categoryContext.querySelector('h2');
-        const description = categoryContext.querySelector('span');
-
-        if (activeCategory === 'all') {
-          title.textContent = searchQuery ? 'Resultados da busca' : 'Todos os produtos';
-          description.textContent = searchQuery
-            ? `${visibleCount} ${visibleCount === 1 ? 'produto encontrado' : 'produtos encontrados'} para sua busca.`
-            : 'Explore 44 soluções para diferentes espaços, rotinas e ideias.';
-          return;
-        }
-
-        const info = categoryInfo[activeCategory];
-        title.textContent = info.label;
-        description.textContent = info.description;
       }
 
       function centerActiveFilterPill(pill, behavior = 'smooth', shouldScroll = true) {
@@ -511,9 +502,8 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
 
-        resultsCount.textContent = `Exibindo ${visibleCount} ${visibleCount === 1 ? 'item' : 'itens'}`;
+        resultsCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'peça' : 'peças'}`;
         noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-        updateCategoryContext(visibleCount);
       }
 
       filterPills.forEach(pill => {
@@ -596,10 +586,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+// Home section scroll snap follows the active SPA view and motion preferences.
+const homeScrollSnapMedia = window.matchMedia('(max-width: 600px)');
+const reducedMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function syncHomeScrollSnap() {
+  const topbar = document.querySelector('.topbar');
+  const topbarHeight = topbar ? Math.ceil(topbar.getBoundingClientRect().height) : 64;
+  document.documentElement.style.setProperty('--home-scroll-padding', `${topbarHeight}px`);
+
+  const enabled = document.body.dataset.view === 'home'
+    && homeScrollSnapMedia.matches
+    && !reducedMotionMedia.matches;
+
+  document.documentElement.classList.toggle('home-scroll-snap-enabled', enabled);
+}
+
+function listenToMediaQuery(query, callback) {
+  if (typeof query.addEventListener === 'function') {
+    query.addEventListener('change', callback);
+  } else if (typeof query.addListener === 'function') {
+    query.addListener(callback);
+  }
+}
+
+listenToMediaQuery(homeScrollSnapMedia, syncHomeScrollSnap);
+listenToMediaQuery(reducedMotionMedia, syncHomeScrollSnap);
+window.addEventListener('resize', syncHomeScrollSnap, { passive: true });
+
 // Single HTML SPA Routing logic
 function setView(viewName, shouldScroll = true) {
   const isCatalog = viewName === 'catalog';
   document.body.setAttribute('data-view', isCatalog ? 'catalog' : 'home');
+  syncHomeScrollSnap();
 
   if (isCatalog) {
     document.title = 'Catálogo de Produtos · 3D On Impressões 3D';
