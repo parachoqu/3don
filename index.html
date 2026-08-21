@@ -15,8 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=f76a70f23b00">
-  <script src="script.js?v=a9b5d00ce605" defer></script>
+  <link rel="stylesheet" href="style.css?v=2c7e4433c2b9">
+  <script src="script.js?v=931748dfd1f1" defer></script>
 </head>
 
 <body id="topo" data-view="home">
@@ -373,10 +373,10 @@
     <div class="view-toolbar">
       <div class="results-count" id="resultsCount" role="status" aria-live="polite">10 peças</div>
       <div class="view-switch" role="group" aria-label="Alterar visualização do catálogo">
-        <button class="view-btn active" type="button" id="gridBtn" aria-label="Modo Grade" aria-pressed="true">
+        <button class="view-btn" type="button" id="gridBtn" aria-label="Modo Grade" aria-pressed="false">
           <img src="assets/icons/view-grid.svg" alt="" aria-hidden="true">
         </button>
-        <button class="view-btn" type="button" id="listBtn" aria-label="Modo Lista" aria-pressed="false">
+        <button class="view-btn active" type="button" id="listBtn" aria-label="Modo Lista" aria-pressed="true">
           <img src="assets/icons/view-list.svg" alt="" aria-hidden="true">
         </button>
       </div>
@@ -384,19 +384,17 @@
     </div>
 
     <!-- Catalog Items Grid -->
-    <div class="cat-grid grid-mode" id="catGrid">
+    <div class="cat-grid list-mode" id="catGrid">
 
       <article class="cat-card-full reveal" data-category="gadgets-e-dispositivos" data-product="Suporte Dobrável para Smartphone Print-in-Place" data-title="Suporte Dobrável para Smartphone Print-in-Place" data-keywords="Suporte Dobrável para Smartphone Print-in-Place Acessórios para Dispositivos Móveis e Gadgets suporte-dobravel-smartphone-print-in-place PLA / PETG Print-in-Place Sem Suportes Ajuste Multiângulo Ultra Leve smartphone celular suporte gadgets escritorio print-in-place">
         <figure class="product-media">
           <img src="assets/catalogo/gadgets-e-dispositivos/suporte-dobravel-smartphone-print-in-place.webp" alt="Imagem ilustrativa de Suporte Dobrável para Smartphone Print-in-Place" width="960" height="720" loading="eager" fetchpriority="high" decoding="async">
           <figcaption>Imagem ilustrativa</figcaption>
-          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Gadgets</span>
-              <span class="material-tag">PLA / PETG</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Suporte Dobrável para Smartphone Print-in-Place">Suporte de celular</button></h3>
             <div class="product-card-details" id="product-card-details-01">
@@ -431,7 +429,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Gadgets</span>
-              <span class="material-tag">PLA / PETG / TPU</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Suporte Ergonômico de Mesa para Headsets">Suporte de headset</button></h3>
             <div class="product-card-details" id="product-card-details-02">
@@ -460,13 +457,11 @@
         <figure class="product-media">
           <img src="assets/catalogo/utensilios-domesticos/prendedor-embalagens-veda-sacos-kit.webp" alt="Imagem ilustrativa de Prendedor de Embalagens Print-in-Place (Kit com 5)" width="960" height="720" loading="lazy" decoding="async">
           <figcaption>Imagem ilustrativa</figcaption>
-          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Casa</span>
-              <span class="material-tag">PETG / PLA</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Prendedor de Embalagens Print-in-Place (Kit com 5)">Prendedor de saco</button></h3>
             <div class="product-card-details" id="product-card-details-03">
@@ -500,7 +495,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Casa</span>
-              <span class="material-tag">PLA</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)">Indicador de louça</button></h3>
             <div class="product-card-details" id="product-card-details-04">
@@ -534,7 +528,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Escritório</span>
-              <span class="material-tag">PLA / TPU</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)">Clipe de cabo</button></h3>
             <div class="product-card-details" id="product-card-details-05">
@@ -568,7 +561,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Escritório</span>
-              <span class="material-tag">PLA Silk / PLA Mármore</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)">Porta-canetas</button></h3>
             <div class="product-card-details" id="product-card-details-06">
@@ -597,13 +589,11 @@
         <figure class="product-media">
           <img src="assets/catalogo/articulados-e-fidgets/dragao-articulado-flexivel.webp" alt="Imagem ilustrativa de Dragão Articulado Flexível (Flexi Dragon)" width="960" height="720" loading="lazy" decoding="async">
           <figcaption>Imagem ilustrativa</figcaption>
-          <span class="pip-flag">Print-in-Place</span>
         </figure>
         <div class="product-card-body">
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Articulados</span>
-              <span class="material-tag">PLA Silk / Multicolor</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Dragão Articulado Flexível (Flexi Dragon)">Dragão articulado</button></h3>
             <div class="product-card-details" id="product-card-details-07">
@@ -637,7 +627,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Articulados</span>
-              <span class="material-tag">PLA / PETG</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Interruptor Háptico de Bolso (Fidget Toggle Switch)">Interruptor fidget</button></h3>
             <div class="product-card-details" id="product-card-details-08">
@@ -671,7 +660,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Chaveiros</span>
-              <span class="material-tag">PLA</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Chaveiro Modular Bloco de Encaixe com Iniciais">Chaveiro de iniciais</button></h3>
             <div class="product-card-details" id="product-card-details-09">
@@ -705,7 +693,6 @@
           <div class="product-card-main">
             <div class="card-top">
               <span class="category-badge">Chaveiros</span>
-              <span class="material-tag">PLA</span>
             </div>
             <h3><button class="card-open" type="button" aria-label="Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)">Chaveiro miniatura</button></h3>
             <div class="product-card-details" id="product-card-details-10">
@@ -779,20 +766,27 @@
     </div>
 
     <details class="image-credits" id="imageCredits">
-      <summary>Como as 10 imagens foram feitas</summary>
-      <p class="credits-note">As imagens são ilustrações geradas localmente para representar os produtos do catálogo, sem caráter de foto real.</p>
-      <ol class="credits-list">
-        <li><strong>Suporte Dobrável para Smartphone Print-in-Place</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Suporte Ergonômico de Mesa para Headsets</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Prendedor de Embalagens Print-in-Place (Kit com 5)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Indicador Magnético Deslizante para Lava-Louças (Limpo/Sujo)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Clipes de Gestão de Cabos para Borda de Mesa (Kit com 4)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Porta-Canetas Escultórico Geométrico (Estilo Moai/Voronoi)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Dragão Articulado Flexível (Flexi Dragon)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Interruptor Háptico de Bolso (Fidget Toggle Switch)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Chaveiro Modular Bloco de Encaixe com Iniciais</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-        <li><strong>Chaveiro Miniatura Colecionável (Balloon Dog / Mini Crocs)</strong> — Imagem ilustrativa gerada localmente · 3D On</li>
-      </ol>
+      <summary>Guia de Materiais e Resoluções</summary>
+      <p class="credits-note">Trabalhamos com filamentos de alta qualidade e diferentes níveis de detalhamento para atender exatamente à necessidade do seu projeto.</p>
+
+      <section class="credits-section" aria-labelledby="materialsGuideTitle">
+        <h4 id="materialsGuideTitle">Materiais</h4>
+        <ul class="credits-list">
+          <li><strong>PLA (Ácido Polilático):</strong> Rígido, biodegradável e com ótimo acabamento. Ideal para itens decorativos ou peças que não sofrem impacto. (Suporta até 55°C)</li>
+          <li><strong>PETG:</strong> Muito durável. Combina alta resistência mecânica, leve flexibilidade e boa absorção de impacto. Ótimo para peças funcionais. (Suporta até 75°C)</li>
+          <li><strong>ABS:</strong> Máxima resistência a impactos fortes e calor. Perfeito para peças mecânicas ou de uso externo intenso. (Suporta até 95°C)</li>
+          <li><strong>TPU (Flexível):</strong> Material emborrachado. Ideal para peças que precisam dobrar, absorver vibrações ou suportar grande flexão sem quebrar.</li>
+        </ul>
+      </section>
+
+      <section class="credits-section" aria-labelledby="resolutionsGuideTitle">
+        <h4 id="resolutionsGuideTitle">Resoluções</h4>
+        <ul class="credits-list">
+          <li><strong>Alta Qualidade (0,10 mm a 0,12 mm):</strong> Máximo de detalhes. Ideal para miniaturas, bonecos e peças onde as linhas de camada precisam ser quase invisíveis.</li>
+          <li><strong>Padrão (0,20 mm):</strong> O equilíbrio perfeito. Excelente acabamento para o dia a dia e ótimo para a maioria das peças funcionais e utilidades.</li>
+          <li><strong>Rápida (0,28 mm a 0,32 mm):</strong> Foco em agilidade. Recomendado para protótipos rápidos, rascunhos ou peças muito grandes sem detalhes finos.</li>
+        </ul>
+      </section>
     </details>
   </main>
 

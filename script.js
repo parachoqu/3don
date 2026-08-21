@@ -342,7 +342,14 @@ document.addEventListener('DOMContentLoaded', () => {
         productModalImage.alt = cardImage.alt;
         productModalCaption.textContent = cardCaption?.textContent || 'Referência visual';
         productModalCategory.textContent = card.querySelector('.category-badge')?.textContent || '';
-        productModalMaterial.textContent = card.querySelector('.material-tag')?.textContent || '';
+        const cardMaterial = card.querySelector('.material-tag');
+        if (cardMaterial) {
+          productModalMaterial.textContent = cardMaterial.textContent;
+          productModalMaterial.style.removeProperty('display');
+        } else {
+          productModalMaterial.textContent = '';
+          productModalMaterial.style.display = 'none';
+        }
         // O card mostra o nome curto; o modal é onde o nome completo cabe. Ler o h3
         // aqui encurtaria o título do modal junto com o do card.
         productModalTitle.textContent = card.dataset.title || card.dataset.product;
@@ -539,11 +546,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const catGrid = document.getElementById('catGrid');
       const gridBtn = document.getElementById('gridBtn');
       const listBtn = document.getElementById('listBtn');
-      const wideLayout = matchMedia('(min-width: 601px)');
-      let userSelectedView = false;
+      const catalogViewStorageKey = '3don_catalog_view_mode';
 
-      function setViewMode(mode, fromUser = false) {
-        const nextMode = wideLayout.matches ? mode : 'grid';
+      function getStoredViewMode() {
+        try {
+          const storedMode = localStorage.getItem(catalogViewStorageKey);
+          return storedMode === 'list' || storedMode === 'grid' ? storedMode : 'list';
+        } catch {
+          return 'list';
+        }
+      }
+
+      function setViewMode(mode, persist = false) {
+        const nextMode = mode === 'grid' ? 'grid' : 'list';
         const useGrid = nextMode === 'grid';
         catGrid.classList.toggle('grid-mode', useGrid);
         catGrid.classList.toggle('list-mode', !useGrid);
@@ -551,10 +566,17 @@ document.addEventListener('DOMContentLoaded', () => {
         listBtn.classList.toggle('active', !useGrid);
         gridBtn.setAttribute('aria-pressed', useGrid ? 'true' : 'false');
         listBtn.setAttribute('aria-pressed', useGrid ? 'false' : 'true');
-        if (fromUser && wideLayout.matches) userSelectedView = true;
+
+        if (persist) {
+          try {
+            localStorage.setItem(catalogViewStorageKey, nextMode);
+          } catch {
+            // The visual switch remains usable when storage is blocked.
+          }
+        }
       }
 
-      setViewMode('grid');
+      setViewMode(getStoredViewMode());
 
       gridBtn.addEventListener('click', () => {
         setViewMode('grid', true);
@@ -562,15 +584,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       listBtn.addEventListener('click', () => {
         setViewMode('list', true);
-      });
-
-      wideLayout.addEventListener('change', (event) => {
-        if (!event.matches) {
-          userSelectedView = false;
-          setViewMode('grid');
-        } else if (!userSelectedView) {
-          setViewMode('grid');
-        }
       });
 
       filterItems();
