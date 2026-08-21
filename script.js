@@ -599,8 +599,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-// Home section scroll snap follows the active SPA view and motion preferences.
-const homeScrollSnapMedia = window.matchMedia('(max-width: 600px)');
+// Desktop home section scroll snap follows the active SPA view and motion preferences.
+const desktopScrollSnapMedia = window.matchMedia('(min-width: 1024px)');
 const reducedMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 function syncHomeScrollSnap() {
@@ -609,7 +609,7 @@ function syncHomeScrollSnap() {
   document.documentElement.style.setProperty('--home-scroll-padding', `${topbarHeight}px`);
 
   const enabled = document.body.dataset.view === 'home'
-    && homeScrollSnapMedia.matches
+    && desktopScrollSnapMedia.matches
     && !reducedMotionMedia.matches;
 
   document.documentElement.classList.toggle('home-scroll-snap-enabled', enabled);
@@ -623,7 +623,7 @@ function listenToMediaQuery(query, callback) {
   }
 }
 
-listenToMediaQuery(homeScrollSnapMedia, syncHomeScrollSnap);
+listenToMediaQuery(desktopScrollSnapMedia, syncHomeScrollSnap);
 listenToMediaQuery(reducedMotionMedia, syncHomeScrollSnap);
 window.addEventListener('resize', syncHomeScrollSnap, { passive: true });
 
