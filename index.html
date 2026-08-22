@@ -15,8 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6f4f435c52c1">
-  <script src="script.js?v=66c5af8fe489" defer></script>
+  <link rel="stylesheet" href="style.css?v=4b8394fefe22">
+  <script src="script.js?v=46eeb2ae2a73" defer></script>
 </head>
 
 <body id="topo" data-view="home">
@@ -99,6 +99,13 @@
           <span class="badge-title" id="heroCarouselBadgeTitle">Impressão Realista — DD Treinamentos</span>
         </div>
       </div>
+
+      <!-- Faixa de fatos: responde o que o visitante pergunta antes de chamar no WhatsApp -->
+      <ul class="hero-facts">
+        <li>Teófilo Otoni/MG · envio para todo o Brasil</li>
+        <li>Modelagem inclusa — você não precisa do arquivo 3D</li>
+        <li>Pronto em 2 a 5 dias úteis</li>
+      </ul>
     </section>
 
     <!-- SECTION 03: O QUE A 3D ON FAZ (EDITORIAL LIST) -->
@@ -116,6 +123,11 @@
             <h3>Personalizados</h3>
             <p>Peças feitas sob medida para representar sua ideia ou marca.</p>
           </div>
+          <ul class="editorial-examples">
+            <li>Troféus</li>
+            <li>Brindes com logo</li>
+            <li>Peças com nome</li>
+          </ul>
           <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
         </a>
 
@@ -125,6 +137,11 @@
             <h3>Presentes</h3>
             <p>Produtos exclusivos pensados para momentos especiais.</p>
           </div>
+          <ul class="editorial-examples">
+            <li>Chaveiros</li>
+            <li>Miniaturas colecionáveis</li>
+            <li>Peças articuladas</li>
+          </ul>
           <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
         </a>
 
@@ -134,6 +151,11 @@
             <h3>Funcionais</h3>
             <p>Objetos práticos desenvolvidos para facilitar o uso diário.</p>
           </div>
+          <ul class="editorial-examples">
+            <li>Suportes de mesa</li>
+            <li>Organizadores</li>
+            <li>Prendedores</li>
+          </ul>
           <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
         </a>
 
@@ -143,6 +165,11 @@
             <h3>Projetos</h3>
             <p>Modelagem + impressão 3D completa do conceito à entrega.</p>
           </div>
+          <ul class="editorial-examples">
+            <li>Modelagem do zero</li>
+            <li>Prototipagem</li>
+            <li>Peças sob medida</li>
+          </ul>
           <span class="editorial-arrow" aria-hidden="true">&rarr;</span>
         </a>
       </div>
@@ -154,6 +181,20 @@
         <p class="eyebrow">Vitrine</p>
         <h2>Destaques</h2>
         <p class="section-sub">Conheça algumas das nossas soluções mais procuradas.</p>
+      </div>
+
+      <div class="highlights-showroom" id="highlightsShowroom">
+        <figure class="highlight-media highlights-stage-media">
+          <img id="showroomImage" src="assets/catalogo/gadgets-e-dispositivos/suporte-dobravel-smartphone-print-in-place.webp" alt="Suporte Dobrável para Smartphone Print-in-Place">
+          <span class="highlight-tag" id="showroomTag">Gadget</span>
+        </figure>
+        <div class="highlight-body highlights-stage-body" id="showroomBody" aria-live="polite">
+          <h3 id="showroomTitle">Suporte Dobrável para Smartphone Print-in-Place</h3>
+          <p id="showroomDesc">Dobrável, ultraleve e pronto para acompanhar mesa, bancada ou mochila.</p>
+          <a class="highlight-cta" id="showroomCta" href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20Suporte%20Dobr%C3%A1vel%20para%20Smartphone%20Print-in-Place." target="_blank" rel="noopener">
+            Orçar &rarr;
+          </a>
+        </div>
       </div>
 
       <div class="highlights-grid" id="highlightsCarousel" aria-label="Produtos em destaque">
@@ -225,6 +266,13 @@
         <p class="eyebrow">Catálogo permanente</p>
         <h2>SOLUÇÕES PRONTAS PARA A ROTINA.</h2>
         <p>Acessórios funcionais, itens de organização, fidgets e chaveiros feitos em impressão 3D para diferentes usos e estilos.</p>
+        <div class="catalog-collection-categories">
+          <a href="#catalogo-completo" class="filter-pill">Gadgets</a>
+          <a href="#catalogo-completo" class="filter-pill">Casa</a>
+          <a href="#catalogo-completo" class="filter-pill">Escritório</a>
+          <a href="#catalogo-completo" class="filter-pill">Articulados</a>
+          <a href="#catalogo-completo" class="filter-pill">Chaveiros</a>
+        </div>
         <a href="#catalogo-completo" class="btn btn-primary ripple-host">
           Ver Catálogo
         </a>
@@ -281,6 +329,12 @@
       <div class="section-head">
         <p class="eyebrow">Dúvidas</p>
         <h2>Perguntas Frequentes</h2>
+        <p class="faq-support">Se a sua dúvida não estiver aqui, é só perguntar — respondemos no WhatsApp.</p>
+        <a class="faq-support-link"
+          href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%203D%20On."
+          target="_blank" rel="noopener">
+          Perguntar no WhatsApp &rarr;
+        </a>
       </div>
 
       <div class="faq-editorial-list">
@@ -325,19 +379,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- SECTION 08: CTA FINAL -->
-    <section class="final-cta-section reveal" id="orcamento">
-      <div class="final-cta-inner">
-        <h2>TIRE SEU PROJETO DO PAPEL.</h2>
-        <p>Conta pra gente o que você precisa. A gente transforma a ideia em uma peça real.</p>
-        <a class="btn btn-primary btn-large ripple-host"
-          href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20com%20a%203D%20On."
-          target="_blank" rel="noopener">
-          Falar no WhatsApp
-        </a>
       </div>
     </section>
 
@@ -790,24 +831,42 @@
     </details>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-top">
-      <div class="logo-mark">
-        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="14.5" stroke="#ff6a00" stroke-width="2" />
-          <path d="M16 8V15" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" />
-          <path d="M11 10.5C9.2 11.9 8 14 8 16.4C8 20.6 11.6 24 16 24C20.4 24 22.8 11.9 21 10.5"
-            stroke="#ff6a00" stroke-width="2" stroke-linecap="round" />
-        </svg>
-        <span>3D<b>On</b></span>
+  <!-- Footer & CTA Final (Unificados) -->
+  <footer class="footer-unified reveal" id="orcamento">
+    <div class="footer-cta-card">
+      <h2 class="footer-cta-title">TIRE SEU PROJETO DO PAPEL.</h2>
+      <div class="footer-cta-main">
+        <p class="footer-cta-desc">Conta pra gente o que você precisa. A gente transforma a ideia em uma peça real.</p>
+        <a class="btn btn-primary btn-large footer-cta-btn ripple-host"
+          href="https://wa.me/5533900000000?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20com%20a%203D%20On."
+          target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+        <ul class="footer-cta-meta">
+          <li>Teófilo Otoni/MG · envio para todo o Brasil</li>
+          <li>Pronto em 2 a 5 dias úteis</li>
+        </ul>
       </div>
-      <a class="footer-social" href="https://www.instagram.com/3don_impressoes" target="_blank" rel="noopener">
-        <img src="assets/icons/instagram.svg" alt="" aria-hidden="true">
-        @3don_impressoes
-      </a>
     </div>
-    <p class="meta">3D On · Soluções em Impressões 3D<br>Teófilo Otoni/MG · Envio para todo o Brasil</p>
+
+    <div class="footer-bottom">
+      <div class="footer-top">
+        <div class="logo-mark">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14.5" stroke="#ff6a00" stroke-width="2" />
+            <path d="M16 8V15" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" />
+            <path d="M11 10.5C9.2 11.9 8 14 8 16.4C8 20.6 11.6 24 16 24C20.4 24 22.8 11.9 21 10.5"
+              stroke="#ff6a00" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>3D<b>On</b></span>
+        </div>
+        <a class="footer-social" href="https://www.instagram.com/3don_impressoes" target="_blank" rel="noopener">
+          <img src="assets/icons/instagram.svg" alt="" aria-hidden="true">
+          @3don_impressoes
+        </a>
+      </div>
+      <p class="meta">3D On · Soluções em Impressões 3D<br>Teófilo Otoni/MG · Envio para todo o Brasil</p>
+    </div>
   </footer>
 
   <!-- Floating Mobile Quick WhatsApp CTA -->

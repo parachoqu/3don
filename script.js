@@ -78,25 +78,41 @@ document.addEventListener('DOMContentLoaded', () => {
       updateFloating();
 
       // FAQ Editorial Accordion Logic
-      document.querySelectorAll('.faq-editorial-question').forEach(btn => {
+      // No desktop as respostas abrem por padrão e cada item alterna sozinho:
+      // acordeão existe para economizar altura, e lá a seção ocupa a tela toda.
+      // Abaixo de 1024px segue exclusivo — abrir um fecha os demais.
+      const faqExclusiveMedia = window.matchMedia('(max-width: 1023.98px)');
+      const faqItems = Array.from(document.querySelectorAll('.faq-editorial-item'));
+
+      function setFaqItem(item, open) {
+        item.classList.toggle('open', open);
+        const question = item.querySelector('.faq-editorial-question');
+        if (question) question.setAttribute('aria-expanded', open ? 'true' : 'false');
+        const icon = item.querySelector('.faq-icon');
+        if (icon) icon.textContent = open ? '−' : '+';
+      }
+
+      function syncFaqDefaults() {
+        const openByDefault = !faqExclusiveMedia.matches;
+        faqItems.forEach(item => setFaqItem(item, openByDefault));
+      }
+
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-editorial-question');
+        if (!btn) return;
         btn.addEventListener('click', () => {
-          const item = btn.closest('.faq-editorial-item');
-          const isOpen = item.classList.contains('open');
-          document.querySelectorAll('.faq-editorial-item').forEach(i => {
-            i.classList.remove('open');
-            const q = i.querySelector('.faq-editorial-question');
-            if (q) q.setAttribute('aria-expanded', 'false');
-            const icon = i.querySelector('.faq-icon');
-            if (icon) icon.textContent = '+';
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-            const icon = btn.querySelector('.faq-icon');
-            if (icon) icon.textContent = '−';
+          const willOpen = !item.classList.contains('open');
+          if (faqExclusiveMedia.matches) {
+            faqItems.forEach(other => {
+              if (other !== item) setFaqItem(other, false);
+            });
           }
+          setFaqItem(item, willOpen);
         });
       });
+
+      listenToMediaQuery(faqExclusiveMedia, syncFaqDefaults);
+      syncFaqDefaults();
       // Automatic Horizontal Carousel for Hero Delivered Projects (Clean Loop)
       function initHeroCarousel() {
         const carousel = document.getElementById('heroVisualCarousel');
@@ -260,6 +276,88 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       initHighlightsCarousel();
+
+      // Showroom interativo de Destaques (desktop): produto principal + lista
+      // lateral. Os 4 .highlight-card continuam a única fonte de dados — o
+      // stage só lê o DOM do card clicado/hover, nada é duplicado em JS.
+      function initHighlightsShowroom() {
+        const showroom = document.getElementById('highlightsShowroom');
+        const list = document.getElementById('highlightsCarousel');
+        if (!showroom || !list) return;
+
+        const cards = Array.from(list.querySelectorAll('.highlight-card'));
+        if (cards.length === 0) return;
+
+        const stageImage = document.getElementById('showroomImage');
+        const stageTag = document.getElementById('showroomTag');
+        const stageTitle = document.getElementById('showroomTitle');
+        const stageDesc = document.getElementById('showroomDesc');
+        const stageCta = document.getElementById('showroomCta');
+
+        let activeIndex = -1;
+        let hoverTimer = null;
+
+        function selectCard(index) {
+          if (index === activeIndex) return;
+          const card = cards[index];
+          if (!card) return;
+
+          const media = card.querySelector('.highlight-media img');
+          const tag = card.querySelector('.highlight-tag');
+          const title = card.querySelector('.highlight-body h3');
+          const desc = card.querySelector('.highlight-body p');
+          const cta = card.querySelector('.highlight-cta');
+          if (!media || !title || !desc || !cta) return;
+
+          stageImage.src = media.getAttribute('src');
+          stageImage.alt = media.alt;
+          stageTag.textContent = tag ? tag.textContent : '';
+          stageTitle.textContent = title.textContent;
+          stageDesc.textContent = desc.textContent;
+          stageCta.setAttribute('href', cta.getAttribute('href'));
+
+          activeIndex = index;
+          cards.forEach((c, i) => {
+            const isActive = i === index;
+            c.classList.toggle('is-active', isActive);
+            c.setAttribute('aria-current', isActive ? 'true' : 'false');
+          });
+        }
+
+        cards.forEach((card, index) => {
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('aria-current', 'false');
+
+          card.addEventListener('click', () => selectCard(index));
+
+          card.addEventListener('mouseenter', () => {
+            clearTimeout(hoverTimer);
+            hoverTimer = setTimeout(() => selectCard(index), 90);
+          });
+
+          card.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimer);
+          });
+
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+              e.preventDefault();
+              selectCard(index);
+            }
+          });
+        });
+
+        const desktopShowroomMedia = window.matchMedia('(min-width: 1024px)');
+        function syncShowroomState() {
+          if (desktopShowroomMedia.matches && activeIndex === -1) {
+            selectCard(0);
+          }
+        }
+        listenToMediaQuery(desktopShowroomMedia, syncShowroomState);
+        syncShowroomState();
+      }
+
+      initHighlightsShowroom();
     });
 
 // Catalog interactions moved from the catalog page
@@ -644,6 +742,8 @@ function setView(viewName, shouldScroll = true) {
     const reveals = activeContainer.querySelectorAll('.reveal');
     reveals.forEach(el => el.classList.add('active'));
   }
+  const footerReveal = document.querySelector('footer.reveal');
+  if (footerReveal) footerReveal.classList.add('active');
 
   if (shouldScroll) {
     window.scrollTo({ top: 0, behavior: 'instant' });
